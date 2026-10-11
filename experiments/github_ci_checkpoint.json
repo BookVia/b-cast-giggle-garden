@@ -1,0 +1,58 @@
+{
+  "repo": "BookVia/b-cast-giggle-garden",
+  "private": false,
+  "commit": "da9e21bc2d743a3a8ca53fd9befafe1b5d6c9617",
+  "workflowPrepared": true,
+  "hostedTrialExecuted": true,
+  "localTrial": {
+    "blender": "5.2.2 LTS",
+    "render_device": "CPU",
+    "seconds": 20.75,
+    "blend_sha256": "950fa7933c5ed750c2b72d6495134097749e6650a2f32587b4fe53eb97e9bd4d",
+    "preview_sha256": "6d2e83537d660651ee1f00e48c6c2002e1060af70908cad280f291d7e4d8d60e",
+    "technical_audit": {
+      "vertices": 51394,
+      "faces": 51392,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0
+    },
+    "render_width": 320,
+    "render_height": 320,
+    "samples": 8,
+    "png_integrity_verified": true,
+    "production_ready": false,
+    "visual_reference_passed": false,
+    "animation_verified": false,
+    "purpose": "Software pipeline compatibility and bounded preview-render test",
+    "hosted_runner": false
+  },
+  "gates": [
+    "Manual standard public-runner experiments only; 15 minute job cap; one concurrent job",
+    "Visual likeness, facial deformation, rigging and animation not approved"
+  ],
+  "hostedTrial": {
+    "blender": "5.2.2 LTS",
+    "render_device": "CPU",
+    "seconds": 10.25,
+    "blend_sha256": "950fa7933c5ed750c2b72d6495134097749e6650a2f32587b4fe53eb97e9bd4d",
+    "preview_sha256": "f80d3add7f85d6a597f6021bb7a632f6e64dde7d89f2649cd15b628ddd64a486",
+    "technical_audit": {
+      "vertices": 51394,
+      "faces": 51392,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0
+    },
+    "render_width": 320,
+    "render_height": 320,
+    "samples": 8,
+    "png_integrity_verified": true,
+    "production_ready": false,
+    "visual_reference_passed": false,
+    "animation_verified": false,
+    "purpose": "Software pipeline compatibility and bounded preview-render test",
+    "hosted_runner": true
+  },
+  "hostedRunUrl": "https://github.com/BookVia/b-cast-giggle-garden/actions/runs/38135329849"
+}

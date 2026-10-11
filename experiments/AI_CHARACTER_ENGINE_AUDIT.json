@@ -1,0 +1,36 @@
+{
+  "updated_utc": "2026-10-11T11:40:42.807712+00:00",
+  "production_ready": false,
+  "tools": {
+    "Hunyuan3D-2mini": {
+      "source_inspected": true,
+      "inference_executed": false,
+      "decision": "Do not promote into globally distributed production; community licence has territory and output restrictions"
+    },
+    "TripoSG": {
+      "source_inspected": true,
+      "inference_executed": false,
+      "decision": "Root MIT claim does not cover all embedded Tencent components; do not assume unrestricted production use"
+    },
+    "OpenLRM": {
+      "source_inspected": true,
+      "inference_executed": false,
+      "decision": "Official pretrained weights explicitly noncommercial; unsuitable for planned production"
+    },
+    "InstantMesh": {
+      "source_inspected": true,
+      "inference_executed": false,
+      "decision": "Apache model weights; CUDA-dependent default pipeline and separately licensed NVIDIA renderer need further verification"
+    },
+    "CRM": {
+      "source_inspected": true,
+      "inference_executed": false,
+      "decision": "MIT main code/weights; CUDA raster context created in constructor and NVIDIA component notices need verification"
+    },
+    "TripoSR": {
+      "source_inspected": true,
+      "inference_executed": true,
+      "decision": "Clean-input 256-resolution CPU experiment completed; all four views rejected; input also needs lower-face mask correction"
+    }
+  }
+}
