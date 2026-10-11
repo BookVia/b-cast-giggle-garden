@@ -1,0 +1,95 @@
+{
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "rigged": false,
+  "source_head": "Amina V35 anatomy topology with distinct per-character proportion adjustments",
+  "source_body": "Amina V22 connected body/garment/footwear surfaces, matched to individual wardrobe; Tebo hoodie rebuilt",
+  "retained_objects": [
+    "Leaf shirt print",
+    "Leaf vein"
+  ],
+  "new_head_mesh": {
+    "vertices": 17542,
+    "faces": 16377,
+    "finite": true,
+    "boundary_edges": 0,
+    "overused_edges": 0,
+    "zero_area_faces": 0
+  },
+  "groom_strands": 6600,
+  "limitations": [
+    "Shared anatomy base requires further character likeness refinement",
+    "V10 hands and clothes remain modelling candidates",
+    "No rig or deformation validation"
+  ],
+  "png_validation_passed": true,
+  "revision": "V39 integrated head/body candidate",
+  "body_geometry": {
+    "body": {
+      "vertices": 51394,
+      "faces": 51392,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "garment": {
+      "vertices": 29210,
+      "faces": 29208,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "shorts": {
+      "vertices": 16600,
+      "faces": 16598,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    }
+  },
+  "changes": [
+    "Corrected neck taper below mouth cavity and shortened head/body neck transition",
+    "Raised mouth corners and reduced mouth height",
+    "Reduced iris/pupil groups together",
+    "Removed old Kiki fringe strands",
+    "Further individualized Kiki/Luma nose proportions"
+  ],
+  "native_groom_points": 217800,
+  "armatures": 0,
+  "all_meshes_finite": true,
+  "blend_reopen_passed": true,
+  "blend_sha256": "618cce7ff6886d9b884d58f4f04afa774e06bf463761d70e0d706b80d52d76dc",
+  "identity_component_checks": [
+    "Leaf shirt print",
+    "Leaf vein"
+  ],
+  "approved_reference_embedded": true,
+  "all_native_hair_points_finite": true,
+  "native_hair_points": 217800,
+  "reopened_mesh_checks": {
+    "Luma V36 Amina anatomy refinement V35 UNAPPROVED": {
+      "vertices": 17542,
+      "faces": 16377,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "Luma V39 connected shoulder and collar garment": {
+      "vertices": 29210,
+      "faces": 29208,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "Luma V39 Amina V18 connected body with shaped hands": {
+      "vertices": 51394,
+      "faces": 51392,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    }
+  }
+}

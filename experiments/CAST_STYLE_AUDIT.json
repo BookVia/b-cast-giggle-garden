@@ -1,0 +1,414 @@
+{
+  "revision": "V39 cast style update",
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "rigged": false,
+  "reference": "approved_reference_assets/Giggle Garden Adventure.png",
+  "direction": "Bring Tebo, Kiki and Luma toward the current Amina anatomy-based style while retaining their identities",
+  "characters": {
+    "Tebo": {
+      "production_ready": false,
+      "visual_reference_passed": false,
+      "rigged": false,
+      "source_head": "Amina V35 anatomy topology with distinct per-character proportion adjustments",
+      "source_body": "Amina V22 connected body/garment/footwear surfaces, matched to individual wardrobe; Tebo hoodie rebuilt",
+      "retained_objects": [
+        "Dinosaur body",
+        "Dinosaur neck",
+        "Dinosaur head",
+        "Dinosaur orange spine",
+        "Dinosaur orange spine.001",
+        "Dinosaur orange spine.002",
+        "Dinosaur orange spine.003",
+        "Dinosaur orange spine.004",
+        "Dinosaur orange spine.005",
+        "Dinosaur tail"
+      ],
+      "new_head_mesh": {
+        "vertices": 17542,
+        "faces": 16377,
+        "finite": true,
+        "boundary_edges": 0,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "groom_strands": 10926,
+      "limitations": [
+        "Shared anatomy base requires further character likeness refinement",
+        "V10 hands and clothes remain modelling candidates",
+        "No rig or deformation validation"
+      ],
+      "png_validation_passed": true,
+      "revision": "V39 integrated head/body candidate",
+      "body_geometry": {
+        "body": {
+          "vertices": 51394,
+          "faces": 51392,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "garment": {
+          "vertices": 39986,
+          "faces": 39984,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "shorts": {
+          "vertices": 16600,
+          "faces": 16598,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        }
+      },
+      "changes": [
+        "Corrected neck taper below mouth cavity and shortened head/body neck transition",
+        "Raised mouth corners and reduced mouth height",
+        "Reduced iris/pupil groups together",
+        "Removed old Kiki fringe strands",
+        "Further individualized Kiki/Luma nose proportions"
+      ],
+      "native_groom_points": 360558,
+      "armatures": 0,
+      "all_meshes_finite": true,
+      "blend_reopen_passed": true,
+      "blend_sha256": "dce51747aa66ae4aef28582dadec2f059522ae781430758c6854a15bfaa269ae",
+      "identity_component_checks": [
+        "Dinosaur body",
+        "Dinosaur head"
+      ],
+      "approved_reference_embedded": true,
+      "all_native_hair_points_finite": true,
+      "native_hair_points": 360558,
+      "reopened_mesh_checks": {
+        "Tebo V36 Amina anatomy refinement V35 UNAPPROVED": {
+          "vertices": 17542,
+          "faces": 16377,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Tebo V39 connected tailored hoodie": {
+          "vertices": 39986,
+          "faces": 39984,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Tebo V39 Amina V18 connected body with shaped hands": {
+          "vertices": 51394,
+          "faces": 51392,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        }
+      }
+    },
+    "Kiki": {
+      "production_ready": false,
+      "visual_reference_passed": false,
+      "rigged": false,
+      "source_head": "Amina V35 anatomy topology with distinct per-character proportion adjustments",
+      "source_body": "Amina V22 connected body/garment/footwear surfaces, matched to individual wardrobe; Tebo hoodie rebuilt",
+      "retained_objects": [
+        "Yellow flared dress",
+        "Daisy centre",
+        "White daisy petal",
+        "White daisy petal.001",
+        "White daisy petal.002",
+        "White daisy petal.003",
+        "White daisy petal.004",
+        "Daisy centre.001",
+        "White daisy petal.005",
+        "White daisy petal.006",
+        "White daisy petal.007",
+        "White daisy petal.008",
+        "White daisy petal.009",
+        "Daisy centre.002",
+        "White daisy petal.010",
+        "White daisy petal.011",
+        "White daisy petal.012",
+        "White daisy petal.013",
+        "White daisy petal.014",
+        "Daisy centre.003",
+        "White daisy petal.015",
+        "White daisy petal.016",
+        "White daisy petal.017",
+        "White daisy petal.018",
+        "White daisy petal.019",
+        "Daisy centre.004",
+        "White daisy petal.020",
+        "White daisy petal.021",
+        "White daisy petal.022",
+        "White daisy petal.023",
+        "White daisy petal.024",
+        "Daisy centre.005",
+        "White daisy petal.025",
+        "White daisy petal.026",
+        "White daisy petal.027",
+        "White daisy petal.028",
+        "White daisy petal.029",
+        "Daisy centre.006",
+        "White daisy petal.030",
+        "White daisy petal.031",
+        "White daisy petal.032",
+        "White daisy petal.033",
+        "White daisy petal.034",
+        "Daisy centre.007",
+        "White daisy petal.035",
+        "White daisy petal.036",
+        "White daisy petal.037",
+        "White daisy petal.038",
+        "White daisy petal.039",
+        "Daisy centre.008",
+        "White daisy petal.040",
+        "White daisy petal.041",
+        "White daisy petal.042",
+        "White daisy petal.043",
+        "White daisy petal.044",
+        "Daisy centre.009",
+        "White daisy petal.045",
+        "White daisy petal.046",
+        "White daisy petal.047",
+        "White daisy petal.048",
+        "White daisy petal.049",
+        "Daisy centre.010",
+        "White daisy petal.050",
+        "White daisy petal.051",
+        "White daisy petal.052",
+        "White daisy petal.053",
+        "White daisy petal.054",
+        "Daisy centre.011",
+        "White daisy petal.055",
+        "White daisy petal.056",
+        "White daisy petal.057",
+        "White daisy petal.058",
+        "White daisy petal.059",
+        "Daisy centre.012",
+        "White daisy petal.060",
+        "White daisy petal.061",
+        "White daisy petal.062",
+        "White daisy petal.063",
+        "White daisy petal.064",
+        "Daisy centre.013",
+        "White daisy petal.065",
+        "White daisy petal.066",
+        "White daisy petal.067",
+        "White daisy petal.068",
+        "White daisy petal.069",
+        "Daisy centre.014",
+        "White daisy petal.070",
+        "White daisy petal.071",
+        "White daisy petal.072",
+        "White daisy petal.073",
+        "White daisy petal.074",
+        "Hair clip centre",
+        "Clip petal",
+        "Clip petal.001",
+        "Clip petal.002",
+        "Clip petal.003",
+        "Clip petal.004"
+      ],
+      "new_head_mesh": {
+        "vertices": 17542,
+        "faces": 16377,
+        "finite": true,
+        "boundary_edges": 0,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "groom_strands": 1619,
+      "limitations": [
+        "Shared anatomy base requires further character likeness refinement",
+        "V10 hands and clothes remain modelling candidates",
+        "No rig or deformation validation"
+      ],
+      "png_validation_passed": true,
+      "revision": "V39 integrated head/body candidate",
+      "body_geometry": {
+        "body": {
+          "vertices": 51394,
+          "faces": 51392,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "garment": {
+          "vertices": 29210,
+          "faces": 29208,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "shorts": null
+      },
+      "changes": [
+        "Corrected neck taper below mouth cavity and shortened head/body neck transition",
+        "Raised mouth corners and reduced mouth height",
+        "Reduced iris/pupil groups together",
+        "Removed old Kiki fringe strands",
+        "Further individualized Kiki/Luma nose proportions"
+      ],
+      "native_groom_points": 53427,
+      "armatures": 0,
+      "all_meshes_finite": true,
+      "blend_reopen_passed": true,
+      "blend_sha256": "1c305fc8625949bdd909411fe6d63135570bf3b1ba3d85649c310037fd125e5f",
+      "identity_component_checks": [
+        "Yellow flared dress",
+        "Hair clip centre",
+        "Clip petal",
+        "White daisy petal"
+      ],
+      "approved_reference_embedded": true,
+      "all_native_hair_points_finite": true,
+      "native_hair_points": 53427,
+      "reopened_mesh_checks": {
+        "Kiki V36 Amina anatomy refinement V35 UNAPPROVED": {
+          "vertices": 17542,
+          "faces": 16377,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Kiki V39 connected shoulder and collar garment": {
+          "vertices": 29210,
+          "faces": 29208,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Kiki V39 Amina V18 connected body with shaped hands": {
+          "vertices": 51394,
+          "faces": 51392,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        }
+      }
+    },
+    "Luma": {
+      "production_ready": false,
+      "visual_reference_passed": false,
+      "rigged": false,
+      "source_head": "Amina V35 anatomy topology with distinct per-character proportion adjustments",
+      "source_body": "Amina V22 connected body/garment/footwear surfaces, matched to individual wardrobe; Tebo hoodie rebuilt",
+      "retained_objects": [
+        "Leaf shirt print",
+        "Leaf vein"
+      ],
+      "new_head_mesh": {
+        "vertices": 17542,
+        "faces": 16377,
+        "finite": true,
+        "boundary_edges": 0,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "groom_strands": 6600,
+      "limitations": [
+        "Shared anatomy base requires further character likeness refinement",
+        "V10 hands and clothes remain modelling candidates",
+        "No rig or deformation validation"
+      ],
+      "png_validation_passed": true,
+      "revision": "V39 integrated head/body candidate",
+      "body_geometry": {
+        "body": {
+          "vertices": 51394,
+          "faces": 51392,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "garment": {
+          "vertices": 29210,
+          "faces": 29208,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "shorts": {
+          "vertices": 16600,
+          "faces": 16598,
+          "finite": true,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        }
+      },
+      "changes": [
+        "Corrected neck taper below mouth cavity and shortened head/body neck transition",
+        "Raised mouth corners and reduced mouth height",
+        "Reduced iris/pupil groups together",
+        "Removed old Kiki fringe strands",
+        "Further individualized Kiki/Luma nose proportions"
+      ],
+      "native_groom_points": 217800,
+      "armatures": 0,
+      "all_meshes_finite": true,
+      "blend_reopen_passed": true,
+      "blend_sha256": "618cce7ff6886d9b884d58f4f04afa774e06bf463761d70e0d706b80d52d76dc",
+      "identity_component_checks": [
+        "Leaf shirt print",
+        "Leaf vein"
+      ],
+      "approved_reference_embedded": true,
+      "all_native_hair_points_finite": true,
+      "native_hair_points": 217800,
+      "reopened_mesh_checks": {
+        "Luma V36 Amina anatomy refinement V35 UNAPPROVED": {
+          "vertices": 17542,
+          "faces": 16377,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Luma V39 connected shoulder and collar garment": {
+          "vertices": 29210,
+          "faces": 29208,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        },
+        "Luma V39 Amina V18 connected body with shaped hands": {
+          "vertices": 51394,
+          "faces": 51392,
+          "boundary_edges": 0,
+          "overused_edges": 0,
+          "zero_area_faces": 0
+        }
+      }
+    }
+  },
+  "visual_review": {
+    "Tebo": [
+      "New short curl groom, blue dinosaur hoodie, khaki shorts and blue lace-up shoes",
+      "Face and head/neck contour remain approximate; hood and facial expression need further refinement"
+    ],
+    "Kiki": [
+      "New bob/bangs, flower clip, yellow daisy dress and pink lace-up shoes",
+      "Shared anatomy requires further individual facial likeness and hairline refinement"
+    ],
+    "Luma": [
+      "New swept wave groom, green leaf tee, tan shorts and green lace-up shoes",
+      "Waves and child facial proportions need closer reference matching"
+    ]
+  },
+  "limitations": [
+    "Amina V35 head and V22 body remain separate source candidates",
+    "The three updated characters use separate head and connected-body meshes; their junction is not deformation validated",
+    "Shared anatomy topology and procedural grooms do not establish approved artwork likeness",
+    "Hands, clothing folds, scalp clearance and render modifier stacks require further refinement",
+    "No approved rigs or finished episodes"
+  ]
+}

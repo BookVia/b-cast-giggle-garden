@@ -1,5 +1,16 @@
 export const STUDIO_APP = String.raw`
 let ytWindow=28,ytData=null;
+function paintCastViews(){
+ for(const [i,n] of ['Amina','Tebo','Kiki','Luma'].entries()){
+  const card=$('#cast')?.children[i];if(!card||card.querySelector('.candidate-views'))continue;
+  const box=document.createElement('p');box.className='candidate-views';
+  for(const [view,label] of [['face','Face'],['three_quarter','Three-quarter'],['profile','Profile']]){
+   const a=document.createElement('a');a.href='/preview/'+n+'_'+view;a.target='_blank';a.rel='noopener';a.textContent=label;box.append(a,document.createTextNode('  '));
+  }card.querySelector('div')?.append(box);
+ }
+
+}
+const castViewsObserver=new MutationObserver(paintCastViews);castViewsObserver.observe(document.querySelector('#cast'),{childList:true});
 const fmt=n=>n===undefined||n===null?'Unavailable':Number(n).toLocaleString();
 async function ytRefresh(){
  try{const s=await api('youtube/status');ytData=s.data;$('#youtube-state').textContent=s.connected?'Connected':s.configured?'Ready to connect':'One-time setup needed';$('#youtube-state').className='badge '+(s.connected?'good':'warn');
@@ -33,6 +44,7 @@ async function studioRefresh(){
  try{const state=await api('state'),s=state.snapshot||{};
  $('#github-status').textContent=JSON.stringify(s.githubExtension||{status:'Waiting for local agent sync'},null,2);$('#ci-local').disabled=!state.lastSeen||Date.now()/1000-state.lastSeen>120;
  $('#tool-reports').textContent=JSON.stringify(s.toolResearch||{status:'Waiting for the local agent to report experiments'},null,2);
+ paintCastViews();
  if(window.echarts){const el=$('#production-chart'),chart=echarts.getInstanceByDom(el)||echarts.init(el,null,{renderer:'svg'});const counts={Blocked:0,Running:0,Completed:0,Draft:0};for(const e of s.episodes||[]){const text=String(e.status).toUpperCase();counts[text.includes('BLOCKED')?'Blocked':text.includes('RUNNING')?'Running':text.includes('COMPLETE')?'Completed':'Draft']++}chart.setOption({tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:90,right:35,top:25,bottom:30},xAxis:{type:'value',minInterval:1,splitLine:{lineStyle:{color:'#edf1f6'}}},yAxis:{type:'category',data:Object.keys(counts)},series:[{type:'bar',barWidth:28,data:Object.values(counts).map((value,i)=>({value,itemStyle:{color:['#e9b257','#8660af','#509c79','#99aac0'][i],borderRadius:5}})),label:{show:true,position:'right'}}],aria:{enabled:true}})}
  $('#generation-status').textContent=JSON.stringify(s.generationExperiment||{},null,2);
  $('#tool-queue').disabled=!state.lastSeen||Date.now()/1000-state.lastSeen>120;

@@ -1,0 +1,103 @@
+{
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "rigged": false,
+  "source_head": "Amina V35 anatomy topology with distinct per-character proportion adjustments",
+  "source_body": "Amina V22 connected body/garment/footwear surfaces, matched to individual wardrobe; Tebo hoodie rebuilt",
+  "retained_objects": [
+    "Dinosaur body",
+    "Dinosaur neck",
+    "Dinosaur head",
+    "Dinosaur orange spine",
+    "Dinosaur orange spine.001",
+    "Dinosaur orange spine.002",
+    "Dinosaur orange spine.003",
+    "Dinosaur orange spine.004",
+    "Dinosaur orange spine.005",
+    "Dinosaur tail"
+  ],
+  "new_head_mesh": {
+    "vertices": 17542,
+    "faces": 16377,
+    "finite": true,
+    "boundary_edges": 0,
+    "overused_edges": 0,
+    "zero_area_faces": 0
+  },
+  "groom_strands": 10926,
+  "limitations": [
+    "Shared anatomy base requires further character likeness refinement",
+    "V10 hands and clothes remain modelling candidates",
+    "No rig or deformation validation"
+  ],
+  "png_validation_passed": true,
+  "revision": "V39 integrated head/body candidate",
+  "body_geometry": {
+    "body": {
+      "vertices": 51394,
+      "faces": 51392,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "garment": {
+      "vertices": 39986,
+      "faces": 39984,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "shorts": {
+      "vertices": 16600,
+      "faces": 16598,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    }
+  },
+  "changes": [
+    "Corrected neck taper below mouth cavity and shortened head/body neck transition",
+    "Raised mouth corners and reduced mouth height",
+    "Reduced iris/pupil groups together",
+    "Removed old Kiki fringe strands",
+    "Further individualized Kiki/Luma nose proportions"
+  ],
+  "native_groom_points": 360558,
+  "armatures": 0,
+  "all_meshes_finite": true,
+  "blend_reopen_passed": true,
+  "blend_sha256": "dce51747aa66ae4aef28582dadec2f059522ae781430758c6854a15bfaa269ae",
+  "identity_component_checks": [
+    "Dinosaur body",
+    "Dinosaur head"
+  ],
+  "approved_reference_embedded": true,
+  "all_native_hair_points_finite": true,
+  "native_hair_points": 360558,
+  "reopened_mesh_checks": {
+    "Tebo V36 Amina anatomy refinement V35 UNAPPROVED": {
+      "vertices": 17542,
+      "faces": 16377,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "Tebo V39 connected tailored hoodie": {
+      "vertices": 39986,
+      "faces": 39984,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "Tebo V39 Amina V18 connected body with shaped hands": {
+      "vertices": 51394,
+      "faces": 51392,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    }
+  }
+}

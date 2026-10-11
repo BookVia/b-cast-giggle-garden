@@ -37,7 +37,7 @@ export default {async scheduled(event,env,ctx){ctx.waitUntil(syncYoutube(env).ca
  if(!b.snapshot||typeof b.snapshot!=='object')return reply({error:'Missing snapshot'},400);
  await env.DB.prepare('INSERT INTO snapshot(id,payload,updated) VALUES(1,?,?) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,updated=excluded.updated').bind(JSON.stringify(b.snapshot),now()).run();
  if(b.activeJob)await env.DB.prepare("UPDATE jobs SET updated=? WHERE id=? AND status='RUNNING'").bind(now(),b.activeJob).run();
- for(const [name,data] of Object.entries(b.previews||{})){if(/^(reference|Amina|Amina_face|Tebo|Kiki|Luma|garden)$/.test(name)&&typeof data==='string'&&data.length<220000&&/^[A-Za-z0-9+/=]+$/.test(data))await env.DB.prepare('INSERT INTO previews(name,data) VALUES(?,?) ON CONFLICT(name) DO UPDATE SET data=excluded.data').bind(name,data).run()}
+ for(const [name,data] of Object.entries(b.previews||{})){if(/^(reference|garden|(?:Amina|Tebo|Kiki|Luma)(?:_(?:face|three_quarter|profile))?)$/.test(name)&&typeof data==='string'&&data.length<220000&&/^[A-Za-z0-9+/=]+$/.test(data))await env.DB.prepare('INSERT INTO previews(name,data) VALUES(?,?) ON CONFLICT(name) DO UPDATE SET data=excluded.data').bind(name,data).run()}
  return reply({ok:true})}
  if(p==='/api/agent/claim'){
  await env.DB.prepare("UPDATE jobs SET status='INTERRUPTED',result='Agent heartbeat lost; inspect local work before retrying',updated=? WHERE status='RUNNING' AND updated<?").bind(now(),now()-300).run();
