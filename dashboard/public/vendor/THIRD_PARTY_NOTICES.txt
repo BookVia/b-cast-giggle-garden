@@ -1,0 +1,4 @@
+Tabler 1.6.1 (MIT): tabler-LICENSE. CSS @import directives removed to keep fonts local.
+CoreUI 5.9.1 (MIT): coreui-coreui-LICENSE. Evaluation only.
+Apache ECharts 6.1.0 (Apache-2.0): echarts-LICENSE, echarts-NOTICE and echarts-licenses-LICENSE-d3.
+All assets are served from this dashboard, without third-party tracking or paid services.

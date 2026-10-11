@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS youtube_sync_lock(id INTEGER PRIMARY KEY,attempted INTEGER NOT NULL);

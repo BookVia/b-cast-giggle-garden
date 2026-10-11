@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {reportURL,youtubeRoute} from './src/youtube.js';
+const q=new URL(reportURL(7,new Date('2026-10-11T10:00:00Z'))).searchParams;
+assert.equal(q.get('startDate'),'2026-10-03');assert.equal(q.get('endDate'),'2026-10-09');assert.equal(q.get('dimensions'),'day');
+const env={SESSION_SECRET:'unit-test-only',DB:{prepare(){return {bind(){return this},async first(){return null},async all(){return {results:[]}}}}}};
+let r=await youtubeRoute(new Request('https://b-cast.bookvia.org/api/youtube/status'),env,'/api/youtube/status');assert.equal(r.status,200);assert.deepEqual((await r.json()).connected,false);
+r=await youtubeRoute(new Request('https://b-cast.bookvia.org/api/youtube/connect',{method:'POST'}),env,'/api/youtube/connect');assert.equal(r.status,409);
+r=await youtubeRoute(new Request('https://b-cast.bookvia.org/oauth/youtube/callback?state=forged&code=bad'),env,'/oauth/youtube/callback');assert.equal(r.status,400);
+r=await youtubeRoute(new Request('https://b-cast.bookvia.org/oauth/youtube/callback?state=expired&code=bad',{headers:{Cookie:'yt_state=expired'}}),env,'/oauth/youtube/callback');assert.equal(r.status,400);
+r=await youtubeRoute(new Request('https://b-cast.bookvia.org/api/youtube/configure',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({client_id:'invalid',client_secret:'no'})}),env,'/api/youtube/configure');assert.equal(r.status,400);
+console.log('YOUTUBE_UNIT_PASS: report dates, disconnected state, missing configuration, forged state, expired state, invalid credentials');

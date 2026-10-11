@@ -1,0 +1,26 @@
+{
+  "name": "giggle-garden-bcast",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-11",
+  "account_id": "37c418ba58bdc39ae2d2b004d5e55421",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "b-cast.bookvia.org",
+      "custom_domain": true
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "giggle-garden-bcast",
+      "database_id": "670a330a-4d19-4937-9989-d64d9ad4b4c0"
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}

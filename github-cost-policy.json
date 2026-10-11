@@ -1,0 +1,8 @@
+{
+  "free_only": true,
+  "allow_hosted_trial": false,
+  "billing_verified": false,
+  "max_job_minutes": 15,
+  "max_parallel_jobs": 1,
+  "reason": "Account quota and spending controls must be verified before hosted execution."
+}
