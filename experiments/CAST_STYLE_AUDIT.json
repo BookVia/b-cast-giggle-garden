@@ -410,5 +410,41 @@
     "Shared anatomy topology and procedural grooms do not establish approved artwork likeness",
     "Hands, clothing folds, scalp clearance and render modifier stacks require further refinement",
     "No approved rigs or finished episodes"
-  ]
+  ],
+  "all_four_views_inspected_per_character": true,
+  "dashboard_verification": {
+    "passed": true,
+    "characters": [
+      "Tebo",
+      "Kiki",
+      "Luma"
+    ],
+    "viewsServed": 12,
+    "previewLinks": 12,
+    "unauthenticatedPreviewBlocked": true,
+    "productionReady": false,
+    "pageErrors": [],
+    "worker": "giggle-garden-bcast",
+    "deploymentVersion": "b2157a6a-2167-4eee-b54b-43f24c5fa089",
+    "verifiedAt": "2026-10-11T13:00:50.138737+00:00",
+    "castImagesDecoded": true,
+    "visualScreenshotsInspected": true
+  },
+  "visual_remaining_findings": {
+    "Tebo": [
+      "Square lower-head contour and rough neck underside",
+      "Jagged scalp boundary and insufficient curl definition",
+      "Hood shape incomplete"
+    ],
+    "Kiki": [
+      "Cap-like bob and projecting bangs need strand/shape refinement",
+      "Chin ridges and rough neck underside",
+      "Facial likeness requires individual sculpting"
+    ],
+    "Luma": [
+      "Sparse fibre coverage in profile and jagged scalp boundary",
+      "Square lower-head contour and rough neck underside",
+      "Swept wave volume needs closer reference matching"
+    ]
+  }
 }

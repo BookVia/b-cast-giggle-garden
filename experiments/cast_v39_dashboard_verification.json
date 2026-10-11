@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "characters": [
+    "Tebo",
+    "Kiki",
+    "Luma"
+  ],
+  "viewsServed": 12,
+  "previewLinks": 12,
+  "unauthenticatedPreviewBlocked": true,
+  "productionReady": false,
+  "pageErrors": [],
+  "worker": "giggle-garden-bcast",
+  "deploymentVersion": "b2157a6a-2167-4eee-b54b-43f24c5fa089",
+  "verifiedAt": "2026-10-11T13:00:50.138737+00:00",
+  "castImagesDecoded": true,
+  "visualScreenshotsInspected": true
+}
