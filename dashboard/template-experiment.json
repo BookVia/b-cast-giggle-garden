@@ -1,0 +1,56 @@
+{
+  "@tabler/core": {
+    "version": "1.6.1",
+    "license": "MIT",
+    "source": {
+      "url": "git+https://github.com/tabler/tabler.git",
+      "type": "git"
+    },
+    "files": [
+      {
+        "file": "tabler.min.css",
+        "bytes": 635394,
+        "sha256": "370a2d4e608ae518351d10528fc7dbe19b354ae5062c51b2a9cb294850d65403"
+      }
+    ],
+    "license_files": []
+  },
+  "@coreui/coreui": {
+    "version": "5.9.1",
+    "license": "MIT",
+    "source": {
+      "url": "git+https://github.com/coreui/coreui.git",
+      "type": "git"
+    },
+    "files": [
+      {
+        "file": "coreui.min.css",
+        "bytes": 335759,
+        "sha256": "554fa0be4a7bd6d04f2c0c249e644279f7ef9b95dbdcbb0892c32fc948c368bb"
+      }
+    ],
+    "license_files": [
+      "coreui-coreui-LICENSE"
+    ]
+  },
+  "echarts": {
+    "version": "6.1.0",
+    "license": "Apache-2.0",
+    "source": {
+      "url": "git+https://github.com/apache/echarts.git",
+      "type": "git"
+    },
+    "files": [
+      {
+        "file": "echarts.min.js",
+        "bytes": 1121883,
+        "sha256": "b66b25aeb4df84e33199dc21694014d336d222cbd9deb0e5a7c14bd6aa0d0fd0"
+      }
+    ],
+    "license_files": [
+      "echarts-LICENSE",
+      "echarts-licenses-LICENSE-d3",
+      "echarts-NOTICE"
+    ]
+  }
+}

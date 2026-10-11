@@ -1,0 +1,31 @@
+name: Blender pipeline compatibility trial
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: bcast-blender-trial
+  cancel-in-progress: false
+jobs:
+  trial:
+    if: vars.BCAST_FREE_RUNS_VERIFIED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Enforce free-only trial gate
+        run: |
+          python3 -c "import json; p=json.load(open('github-cost-policy.json')); assert p['billing_verified'] and p['allow_hosted_trial'], 'Free allowance and spending controls must be verified first'"
+      - name: Build matching Blender container
+        run: docker build -t bcast-blender-test -f pipeline/Dockerfile .
+      - name: Check geometry and render one preview
+        run: docker run --rm --cpus=2 --memory=6g -e GITHUB_ACTIONS=true -v "$GITHUB_WORKSPACE:/project" bcast-blender-test
+      - name: Keep bounded test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: bcast-blender-compatibility
+          path: output/
+          retention-days: 1
+          if-no-files-found: error

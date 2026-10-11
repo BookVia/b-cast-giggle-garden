@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-11T10:31:36.815Z",
+  "privateEndpoints": true,
+  "crossOriginBlocked": true,
+  "forgedOAuthBlocked": true,
+  "disconnectedNoFakeData": true,
+  "episodeSearch": true,
+  "reviewForm": true,
+  "toolsPanel": true,
+  "mobileOverflow": false,
+  "browserErrors": []
+}

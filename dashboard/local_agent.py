@@ -27,7 +27,7 @@ def snapshot():
     except (OSError,wave.Error):pass
   episodes.append({'id':ep.name,'title':story.get('title',ep.name),'status':story.get('status','DRAFT')+' / PRODUCTION BLOCKED','audioSeconds':round(duration,2) if duration else None,'stages':progress.get('stages',{})})
  registry=read(ROOT/'CURRENT_PRODUCTION_ASSETS.json',{})
- return {'toolResearch':read(ROOT/'tool_experiments'/'VERIFIED_TOOL_FINDINGS.json',{}),'assetRevisions':{n:{'revision':a.get('revision'),'faceAudit':a.get('face_audit','NOT VERIFIED')} for n,a in registry.get('assets',{}).items()},'generationExperiment':read(ROOT/'pipeline_audit'/'qwen17_generation_progress.json',{}),'episodes':episodes,'completedEpisodes':0,'approvedCharacters':0,'productionReady':False,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note':registry.get('note','All character and garden candidates remain unapproved. No approved rigs or finished episodes are available.')}
+ return {'githubExtension':{'repository':read(ROOT/'tool_experiments/github_repository.json',{}),'costPolicy':read(ROOT/'bcast-github-project/github-cost-policy.json',{}),'localTrial':read(ROOT/'bcast-github-project/output/ci-result.json',{})},'toolResearch':read(ROOT/'tool_experiments'/'VERIFIED_TOOL_FINDINGS.json',{}),'assetRevisions':{n:{'revision':a.get('revision'),'faceAudit':a.get('face_audit','NOT VERIFIED')} for n,a in registry.get('assets',{}).items()},'generationExperiment':read(ROOT/'pipeline_audit'/'qwen17_generation_progress.json',{}),'episodes':episodes,'completedEpisodes':0,'approvedCharacters':0,'productionReady':False,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note':registry.get('note','All character and garden candidates remain unapproved. No approved rigs or finished episodes are available.')}
 def previews():
  from PIL import Image
  paths={'reference':ROOT/'approved_reference_assets'/'Giggle Garden Adventure.png'}
@@ -48,9 +48,10 @@ def previews():
  return out
 def command(job):
  ep=job.get('episode','');action=job.get('action')
- if action not in ('preflight','voice_audition','render','tool_audit') or not ep or any(c not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-' for c in ep):raise ValueError('Invalid allowlisted job')
+ if action not in ('preflight','voice_audition','render','tool_audit','ci_local') or not ep or any(c not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-' for c in ep):raise ValueError('Invalid allowlisted job')
  target=(ROOT/'episodes'/ep).resolve()
  if target.parent!=(ROOT/'episodes').resolve() or not (target/'story.json').exists():raise ValueError('Episode outside project or missing')
+ if action=='ci_local':return [r'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe','-b','--python',str(ROOT/'bcast-github-project/pipeline/ci_check.py')]
  if action=='tool_audit':return [sys.executable,str(ROOT/'record_tool_verdicts.py')]
  args=[sys.executable,str(ROOT/'pipeline_runner.py'),'--episode',ep]
  if action=='voice_audition':args+=['--voice-audition']
@@ -79,7 +80,7 @@ def main():
      progress=read(ROOT/'episodes'/active['episode']/'pipeline_progress.json',{})
      blocked=progress.get('stages',{}).get('final_render',{}).get('status')=='BLOCKED'
      script_blocked=progress.get('stages',{}).get('script_quality',{}).get('status')=='BLOCKED'
-     status='FAILED' if proc.returncode else 'BLOCKED' if (script_blocked and active['action']!='tool_audit') or (blocked and active['action'] in ('preflight','render')) else 'DONE'
+     status='FAILED' if proc.returncode else 'BLOCKED' if (script_blocked and active['action'] in ('preflight','voice_audition','render')) or (blocked and active['action'] in ('preflight','render')) else 'DONE'
      api('result',{'id':active['id'],'status':status,'result':content},config)
      proc=None;active=None;log=None
     if not active and not a.no_jobs:

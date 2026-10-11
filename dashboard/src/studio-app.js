@@ -31,6 +31,7 @@ $('#yt-json').onchange=async e=>{try{const file=e.target.files?.[0];if(!file)ret
 async function studioRefresh(){
  if($('#workspace').hidden)return;
  try{const state=await api('state'),s=state.snapshot||{};
+ $('#github-status').textContent=JSON.stringify(s.githubExtension||{status:'Waiting for local agent sync'},null,2);$('#ci-local').disabled=!state.lastSeen||Date.now()/1000-state.lastSeen>120;
  $('#tool-reports').textContent=JSON.stringify(s.toolResearch||{status:'Waiting for the local agent to report experiments'},null,2);
  if(window.echarts){const el=$('#production-chart'),chart=echarts.getInstanceByDom(el)||echarts.init(el,null,{renderer:'svg'});const counts={Blocked:0,Running:0,Completed:0,Draft:0};for(const e of s.episodes||[]){const text=String(e.status).toUpperCase();counts[text.includes('BLOCKED')?'Blocked':text.includes('RUNNING')?'Running':text.includes('COMPLETE')?'Completed':'Draft']++}chart.setOption({tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:90,right:35,top:25,bottom:30},xAxis:{type:'value',minInterval:1,splitLine:{lineStyle:{color:'#edf1f6'}}},yAxis:{type:'category',data:Object.keys(counts)},series:[{type:'bar',barWidth:28,data:Object.values(counts).map((value,i)=>({value,itemStyle:{color:['#e9b257','#8660af','#509c79','#99aac0'][i],borderRadius:5}})),label:{show:true,position:'right'}}],aria:{enabled:true}})}
  $('#generation-status').textContent=JSON.stringify(s.generationExperiment||{},null,2);
@@ -42,6 +43,7 @@ async function studioRefresh(){
  }catch(e){$('#notice').textContent=e.message}
 }
 function filterJobs(){const wanted=$('#job-filter').value;document.querySelectorAll('#jobs tr').forEach(r=>r.hidden=wanted!=='ALL'&&r.dataset.status!==wanted)}
+$('#ci-local').onclick=async()=>{try{const s=await api('state'),ep=s.snapshot?.episodes?.[0]?.id;if(!ep)throw Error('No episode workspace');await api('jobs',{action:'ci_local',episode:ep});await refresh();await studioRefresh()}catch(e){$('#notice').textContent=e.message}};
 $('#tool-queue').onclick=async()=>{try{const s=await api('state');const ep=s.snapshot?.episodes?.[0]?.id;if(!ep)throw Error('No local episode workspace');await api('jobs',{action:'tool_audit',episode:ep});await refresh();await studioRefresh()}catch(e){$('#notice').textContent=e.message}};
 $('#review-form').onsubmit=async e=>{e.preventDefault();try{await api('reviews',{asset:$('#review-asset').value,note:$('#review-note').value});$('#review-note').value='';await studioRefresh()}catch(e){$('#notice').textContent=e.message}};
 document.addEventListener('click',e=>{if(e.target.closest('#refresh'))setTimeout(studioRefresh,600)});
