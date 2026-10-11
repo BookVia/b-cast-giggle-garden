@@ -1,0 +1,136 @@
+{
+  "scope": "All Amina visual features and source body candidate",
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "candidate": "V35 anatomy head; V22 body remains separate",
+  "evidence": [
+    "Geometry hashes and world transforms compared against V22",
+    "Front, three-quarter and profile review renders",
+    "Source body geometry audit",
+    "Opening reconstruction integrity audit"
+  ],
+  "features": [
+    {
+      "feature": "Eyes, iris, pupil and reflections",
+      "origin": "Transferred V22 eye components",
+      "cause": "Old dimensions and depths did not fit the anatomy head",
+      "action": "Eye components refitted together; closed socket cavities tested after rejecting boundary projection",
+      "remaining": "Lid silhouette, expression and deformation need reference review"
+    },
+    {
+      "feature": "Scalp and hairline",
+      "origin": "V22 scalp strips initially transferred",
+      "cause": "Old scalp shape caused detached side strips and incorrect forehead fit",
+      "action": "Old scalp pieces removed; cap and swept native fibres built from evaluated head surface",
+      "remaining": "Straight fibre appearance and hairline styling still differ from reference"
+    },
+    {
+      "feature": "Puffs",
+      "origin": "V22 support meshes and V20 native strand geometry",
+      "cause": "Geometry and transforms were unchanged despite the new head",
+      "action": "Support meshes and native strands fitted together, with unequal sizes; hair shader changed",
+      "remaining": "Curl clumping and silhouette still too patterned"
+    },
+    {
+      "feature": "Headband and bow",
+      "origin": "V22 transferred accessories",
+      "cause": "Unchanged band was wider than the head; bow position was inherited",
+      "action": "Band rebuilt from head-surface samples; whole bow fitted using its knot attachment",
+      "remaining": "Fabric detail and clearance require final visual review"
+    },
+    {
+      "feature": "Earrings",
+      "origin": "V22 transferred stem only",
+      "cause": "Name-filter import omitted four stud/bead objects; stems retained old ear locations",
+      "action": "All six objects restored and fitted to new ear positions; bead material corrected to purple",
+      "remaining": "Fine attachment and motion unverified"
+    },
+    {
+      "feature": "Nose, cheeks, jaw, ears",
+      "origin": "New MPFB anatomy fitting, not V22 face",
+      "cause": "Anisotropic anatomical mapping and generic proportions; not a transfer-only defect",
+      "action": "Forehead and lower-face proportions adjusted; nose width refined",
+      "remaining": "Custom Amina sculpt likeness remains incomplete"
+    },
+    {
+      "feature": "Mouth and teeth",
+      "origin": "New refinement geometry",
+      "cause": "New mouth placement and boundary projection failed; the first cavity workflow left the lips intact. Exact contributions of operand shape and dependency order remain unverified.",
+      "action": "Mouth opening repositioned; closed cavity construction tested after folded-lip projection was rejected",
+      "remaining": "Lip volume, tongue, individual tooth detail and expression shapes incomplete"
+    },
+    {
+      "feature": "Skin and shading",
+      "origin": "Anatomy skin test material and mixed inherited accessory materials",
+      "cause": "Materials were not consistently matched to the reference",
+      "action": "Warm brown anatomy material retained for review; earrings corrected",
+      "remaining": "Skin colour, roughness and lighting must be evaluated consistently against reference"
+    },
+    {
+      "feature": "Body and hands",
+      "origin": "V22 body candidate; absent from V28 head file",
+      "cause": "Earlier modelling limitations; not newly transferred into this head",
+      "action": "Source geometry audited; no nonfinite or overused edges found in selected body-feature meshes",
+      "remaining": "Hand anatomy, nail placement, neck integration, posing and deformation require work"
+    },
+    {
+      "feature": "Clothes, flower, buttons, shoes",
+      "origin": "V22 candidate; not integrated into new head branch",
+      "cause": "Existing simplified garment construction and incomplete fitting",
+      "action": "27 body-feature objects audited; reference colours and key motifs present",
+      "remaining": "Cloth silhouette, bib construction, stitching, shoe detail, clearance and deformation unverified"
+    }
+  ],
+  "technical_checkpoint": {
+    "blend_sha256": "d966cbb9751012b8effb32469856d618f27b17316cf271f51040f9c84dd5175a",
+    "meshes": {
+      "Amina anatomy refinement V35 UNAPPROVED": {
+        "vertices": 17542,
+        "faces": 16377,
+        "finite": true,
+        "boundary_edges": 0,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "V33 mouth interior": {
+        "vertices": 65,
+        "faces": 64,
+        "finite": true,
+        "boundary_edges": 64,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "V33 curved upper teeth": {
+        "vertices": 66,
+        "faces": 32,
+        "finite": true,
+        "boundary_edges": 66,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      },
+      "V33 scalp fitted to anatomy": {
+        "vertices": 978,
+        "faces": 904,
+        "finite": true,
+        "boundary_edges": 146,
+        "overused_edges": 0,
+        "zero_area_faces": 0
+      }
+    },
+    "production_ready": false,
+    "visual_reference_passed": false,
+    "rigged": false,
+    "purpose": "Geometry integrity audit, not deformation approval"
+  },
+  "limitations": [
+    "V35 head is not a complete integrated character",
+    "Closed main head mesh passes finite/edge/area checks; inner mouth, tooth strip and scalp have intentional open borders",
+    "No rigging, facial deformation or completed episode approval"
+  ],
+  "latest_visual_findings": [
+    "All six earring parts restored; headband, bow and puffs refitted",
+    "Latest cavity gives an open mouth without the folded-lip failure",
+    "The mouth remains too oval, the scalp too straight, and facial likeness and curl clumping require refinement",
+    "Neck cap and head remain separate from body; no deformation verification"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "earring_attachments": {
+    "-1": [
+      -0.35437074303627014,
+      -0.051103126257658005,
+      2.023651123046875
+    ],
+    "1": [
+      0.354370653629303,
+      -0.05110325291752815,
+      2.023651123046875
+    ]
+  },
+  "puffs": {
+    "V20 detailed puff fibres 1": {
+      "scale": 0.94,
+      "new_center": [
+        0.3869999945163727,
+        0.05000000074505806,
+        2.5350000858306885
+      ]
+    },
+    "V20 detailed puff fibres -1": {
+      "scale": 1.03,
+      "new_center": [
+        -0.3869999945163727,
+        0.05000000074505806,
+        2.555000066757202
+      ]
+    },
+    "Amina irregular puff volume.001": {
+      "scale": 0.94,
+      "new_center": [
+        0.3869999945163727,
+        0.05000000074505806,
+        2.5350000858306885
+      ]
+    },
+    "Amina irregular puff volume": {
+      "scale": 1.03,
+      "new_center": [
+        -0.3869999945163727,
+        0.05000000074505806,
+        2.555000066757202
+      ]
+    }
+  },
+  "changes": [
+    "Missing studs and purple beads restored",
+    "Band rebuilt on anatomy surface",
+    "Bow fitted by knot attachment",
+    "Puff supports and native fibres refitted together",
+    "Lower face compressed and nose width refined",
+    "Mouth cavity corrected using independently verified modifier/dependency order"
+  ],
+  "requires": [
+    "Visual likeness review",
+    "Topology and clearance audit",
+    "Body integration and deformation tests"
+  ]
+}

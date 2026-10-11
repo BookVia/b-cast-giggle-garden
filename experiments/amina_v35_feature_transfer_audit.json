@@ -1,0 +1,2926 @@
+{
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "comparison": "V22 complete candidate versus V35 anatomy head branch",
+  "objects": {
+    "Amina anatomy refinement V35 UNAPPROVED": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "MESH",
+      "geometry_sha256": "83356254e7c6db588d7e8ba67dd127ec50fb62789a17ea39f4e6ef1fbb8e5ccf",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.373638778924942,
+          0.37363874912261963
+        ],
+        [
+          -0.3707045316696167,
+          0.263027548789978
+        ],
+        [
+          1.7510861158370972,
+          2.632784605026245
+        ]
+      ],
+      "materials": [
+        "Warm brown anatomy refit test",
+        "V33 inner mouth"
+      ],
+      "vertices": 17542
+    },
+    "V20 detailed puff fibres 1": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": false,
+      "type": "CURVES",
+      "geometry_sha256": "a292a10f25acaacf17eac688fc6e359152c93c058138a23665bd1c196f707609",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.11599777638912201,
+          0.6585884690284729
+        ],
+        [
+          -0.20350977778434753,
+          0.3139752149581909
+        ],
+        [
+          2.2469394207000732,
+          2.8229384422302246
+        ]
+      ],
+      "materials": [
+        "V33 natural fibre shader"
+      ],
+      "vertices": null
+    },
+    "V20 detailed puff fibres -1": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": false,
+      "type": "CURVES",
+      "geometry_sha256": "c64bab487f7a32b717a060ddbc7d0bb5ee61a9807a770d123ed1125f5aa80a79",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.6760891079902649,
+          -0.09196089208126068
+        ],
+        [
+          -0.22949302196502686,
+          0.3464828133583069
+        ],
+        [
+          2.2468297481536865,
+          2.865100622177124
+        ]
+      ],
+      "materials": [
+        "V33 natural fibre shader"
+      ],
+      "vertices": null
+    },
+    "Purple drop earring.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": true,
+      "type": "CURVE",
+      "geometry_sha256": "328184ea4170bf76809760f78aa2a4ec18577588ca9d0a80a560fc27a4a8132a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3497152030467987,
+          0.3640260696411133
+        ],
+        [
+          -0.061103250831365585,
+          -0.04710325226187706
+        ],
+        [
+          1.9724887609481812,
+          2.0138137340545654
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Purple drop earring": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": true,
+      "type": "CURVE",
+      "geometry_sha256": "04941b2b3dc0a4ec54d3bb1395b29c8213a521369cd278e39545cacb94d65de3",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.36402615904808044,
+          -0.34971529245376587
+        ],
+        [
+          -0.06110312417149544,
+          -0.04710312560200691
+        ],
+        [
+          1.9724887609481812,
+          2.0138137340545654
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Amina secondary reflection.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "d25c193706ff033d6d01a1e78bf0e591f642b4324947e43bda6c6a7fa6dc5b4c",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.19944480061531067,
+          0.21208401024341583
+        ],
+        [
+          -0.2950800061225891,
+          -0.2916399836540222
+        ],
+        [
+          2.1525442600250244,
+          2.1637160778045654
+        ]
+      ],
+      "materials": [
+        "Warm ivory teeth"
+      ],
+      "vertices": 178
+    },
+    "Amina secondary reflection": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "b609965f2672aff01a508ea8d95d449e927e9da01acf536529c6c541eb0b3d02",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.1705552041530609,
+          -0.15791600942611694
+        ],
+        [
+          -0.2950800061225891,
+          -0.2916399836540222
+        ],
+        [
+          2.1525442600250244,
+          2.1637160778045654
+        ]
+      ],
+      "materials": [
+        "Warm ivory teeth"
+      ],
+      "vertices": 178
+    },
+    "Amina seated eyeball.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "a770ef8b0fb6db7a3fc6bed6568d33a5b0c940169c11ab516bd342dec50326db",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.07547999918460846,
+          0.2945200204849243
+        ],
+        [
+          -0.2813200056552887,
+          -0.08867999911308289
+        ],
+        [
+          2.089600086212158,
+          2.2604000568389893
+        ]
+      ],
+      "materials": [
+        "Eye sclera ivory"
+      ],
+      "vertices": 1490
+    },
+    "Amina seated eyeball": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "f887d4f1050bbd81a0ec2f47c0f2257773b8c0d4eed46cd3ac14c36e2832840d",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.2945200204849243,
+          -0.07547999918460846
+        ],
+        [
+          -0.2813200056552887,
+          -0.08867999911308289
+        ],
+        [
+          2.089600086212158,
+          2.2604000568389893
+        ]
+      ],
+      "materials": [
+        "Eye sclera ivory"
+      ],
+      "vertices": 1490
+    },
+    "Amina pupil.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "66b208a9998640695e66e6efcd32b936acc6073026137b8b7e4944d77b91b387",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.13917388021945953,
+          0.23082612454891205
+        ],
+        [
+          -0.29249998927116394,
+          -0.2821800112724304
+        ],
+        [
+          2.1261463165283203,
+          2.2140538692474365
+        ]
+      ],
+      "materials": [
+        "Pupil"
+      ],
+      "vertices": 1490
+    },
+    "Amina pupil": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "6ea0f63e2eac25e01eabb21eb6389a1451922e8ae63b3ef60360cbd47bf7a899",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.23082612454891205,
+          -0.13917388021945953
+        ],
+        [
+          -0.29249998927116394,
+          -0.2821800112724304
+        ],
+        [
+          2.1261463165283203,
+          2.2140538692474365
+        ]
+      ],
+      "materials": [
+        "Pupil"
+      ],
+      "vertices": 1490
+    },
+    "Amina main eye reflection.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "88ba853acb2a99783ca9639e0d0f2e843d90cefc8aea9089d290680d0a49576a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.14798519015312195,
+          0.18048599362373352
+        ],
+        [
+          -0.2976599931716919,
+          -0.29249998927116394
+        ],
+        [
+          2.179676055908203,
+          2.2100000381469727
+        ]
+      ],
+      "materials": [
+        "Warm ivory teeth"
+      ],
+      "vertices": 362
+    },
+    "Amina main eye reflection": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "fe45b39213e26c68a7e7eb962a563fb93583d930864eeccd6b33c4d49a24c053",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.22201478481292725,
+          -0.18951399624347687
+        ],
+        [
+          -0.2976599931716919,
+          -0.29249998927116394
+        ],
+        [
+          2.179676055908203,
+          2.2100000381469727
+        ]
+      ],
+      "materials": [
+        "Warm ivory teeth"
+      ],
+      "vertices": 362
+    },
+    "Amina irregular puff volume.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "9ded2f4f4756dc8644ebd5918ea6df86769b9399dbfac57ca3019795d473107b",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.16332513093948364,
+          0.6106748580932617
+        ],
+        [
+          -0.17022734880447388,
+          0.2702273428440094
+        ],
+        [
+          2.3030648231506348,
+          2.766935348510742
+        ]
+      ],
+      "materials": [
+        "Curl shade 1"
+      ],
+      "vertices": 2186
+    },
+    "Amina irregular puff volume": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "2cef0a078395eca81c064ede72a5881339fb92c76fa24b93a99ce18b1480e17e",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.6320905685424805,
+          -0.14190945029258728
+        ],
+        [
+          -0.19131293892860413,
+          0.29131293296813965
+        ],
+        [
+          2.30085825920105,
+          2.8091418743133545
+        ]
+      ],
+      "materials": [
+        "Curl shade 1"
+      ],
+      "vertices": 2186
+    },
+    "Amina folded bow loop.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "0c8a1269920758a52cf1d543a479ad20b9298b18395fd1e8bb52d46d0db19cc0",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.16291147470474243
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0046224445104599
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.09024796634912491
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.10434228181838989,
+          0.2249065786600113
+        ],
+        [
+          -0.21896791458129883,
+          -0.1562567800283432
+        ],
+        [
+          2.536909341812134,
+          2.6865956783294678
+        ]
+      ],
+      "materials": [
+        "Headband rich magenta"
+      ],
+      "vertices": 225
+    },
+    "Amina folded bow loop": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "2fa3351ac00f7b0b8311f99415202b469b4183b55b5ad02a44e94df77c44d3c0",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.16291147470474243
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0046224445104599
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.09024796634912491
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.029083654284477234,
+          0.09148067981004715
+        ],
+        [
+          -0.21896791458129883,
+          -0.1562567800283432
+        ],
+        [
+          2.536909341812134,
+          2.6865956783294678
+        ]
+      ],
+      "materials": [
+        "Headband rich magenta"
+      ],
+      "vertices": 225
+    },
+    "Amina brown iris.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "87d2e427614f7f5ab348273ad26a4c9eba4b65465621040f35dd8837a3ca160f",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.10817170888185501,
+          0.2618282735347748
+        ],
+        [
+          -0.2873400151729584,
+          -0.26669999957084656
+        ],
+        [
+          2.098519802093506,
+          2.24168062210083
+        ]
+      ],
+      "materials": [
+        "Iris umber"
+      ],
+      "vertices": 1490
+    },
+    "Amina brown iris": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": false,
+      "source_transform_unchanged": true,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "e5bca159a61e6e731bac70bd64ef32d7ad493d6dbb9259f8d4bdd0a7a25026a2",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.2618282735347748,
+          -0.10817170888185501
+        ],
+        [
+          -0.2873400151729584,
+          -0.26669999957084656
+        ],
+        [
+          2.098519802093506,
+          2.24168062210083
+        ]
+      ],
+      "materials": [
+        "Iris umber"
+      ],
+      "vertices": 1490
+    },
+    "Amina bow knot": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": true,
+      "type": "MESH",
+      "geometry_sha256": "1010afbfb04e9d23293aa9d5fe98fcafdc7886070a7202c61d2bff5be4f2c93e",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.16291147470474243
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.0046224445104599
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.09024796634912491
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.07391147315502167,
+          0.12191147357225418
+        ],
+        [
+          -0.20562244951725006,
+          -0.1556224375963211
+        ],
+        [
+          2.578752040863037,
+          2.644752025604248
+        ]
+      ],
+      "materials": [
+        "Headband rich magenta"
+      ],
+      "vertices": 1490
+    },
+    "V33 mouth interior": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "MESH",
+      "geometry_sha256": "c0f7c2775cfe38ffc337ddb28fca1b20c2ffd90fc1a875b1a2b7e7070594fbb4",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.14800000190734863,
+          0.14800000190734863
+        ],
+        [
+          -0.210999995470047,
+          -0.210999995470047
+        ],
+        [
+          1.8678799867630005,
+          1.9893200397491455
+        ]
+      ],
+      "materials": [
+        "V33 inner mouth"
+      ],
+      "vertices": 65
+    },
+    "V33 curved upper teeth": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "MESH",
+      "geometry_sha256": "26f150a64186d0869f7eb242a5242fb913b437bc94ee45f1ce45c4666d8d50f6",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.11599999666213989,
+          0.11599999666213989
+        ],
+        [
+          -0.25600001215934753,
+          -0.2355249524116516
+        ],
+        [
+          1.930359959602356,
+          1.9655600786209106
+        ]
+      ],
+      "materials": [
+        "V33 warm ivory teeth"
+      ],
+      "vertices": 66
+    },
+    "V33 scalp fitted to anatomy": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "MESH",
+      "geometry_sha256": "90bd9a171a81781a5ab451d8f629ae43313b425e6c0905d562842d061578e8e9",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.35096538066864014,
+          0.3509654402732849
+        ],
+        [
+          -0.30364692211151123,
+          0.2655273973941803
+        ],
+        [
+          2.203895092010498,
+          2.6352837085723877
+        ]
+      ],
+      "materials": [
+        "V33 dark warm scalp"
+      ],
+      "vertices": 978
+    },
+    "V33 swept scalp fibres": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "CURVES",
+      "geometry_sha256": "9b434a4e44d3046123dbe83698306a1034848dd971544c94c9533a1a370c503f",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.32845500111579895,
+          0.32836151123046875
+        ],
+        [
+          -0.3041330575942993,
+          0.11670757830142975
+        ],
+        [
+          2.3383586406707764,
+          2.637775421142578
+        ]
+      ],
+      "materials": [
+        "V33 dark warm scalp"
+      ],
+      "vertices": null
+    },
+    "V33 fitted eyebrow -1": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "CURVE",
+      "geometry_sha256": "07c8575d2346c40f0baa14c9cbd4dd8bf5d148ef2c6f801444ce6e8f2ad2b487",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.25832244753837585,
+          -0.10418452322483063
+        ],
+        [
+          -0.33373746275901794,
+          -0.2892269790172577
+        ],
+        [
+          2.277432918548584,
+          2.3258423805236816
+        ]
+      ],
+      "materials": [
+        "V33 dark warm scalp"
+      ],
+      "vertices": null
+    },
+    "V33 fitted eyebrow 1": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "CURVE",
+      "geometry_sha256": "29fb000f00a1471a18de462ff480400655227f531e10c51f0a7b44a5d59ce89a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.10418451577425003,
+          0.25832244753837585
+        ],
+        [
+          -0.33373746275901794,
+          -0.2892269790172577
+        ],
+        [
+          2.277432918548584,
+          2.3258423805236816
+        ]
+      ],
+      "materials": [
+        "V33 dark warm scalp"
+      ],
+      "vertices": null
+    },
+    "Purple earring bead.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": false,
+      "type": "MESH",
+      "geometry_sha256": "eabee49b144c2f64883c4ea6051f36723b09a677a1eca4e52185438ae504c7c7",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3383706510066986,
+          0.3763706386089325
+        ],
+        [
+          -0.06910325586795807,
+          -0.03910325467586517
+        ],
+        [
+          1.9366511106491089,
+          1.9866511821746826
+        ]
+      ],
+      "materials": [
+        "V34 reference purple earrings"
+      ],
+      "vertices": 1000
+    },
+    "Purple earring bead": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": false,
+      "type": "MESH",
+      "geometry_sha256": "ef328084b8378ef948a90a819dcc335701e96abbbc1922932bdf85ef68b55c78",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.37637072801589966,
+          -0.33837074041366577
+        ],
+        [
+          -0.06910312175750732,
+          -0.039103128015995026
+        ],
+        [
+          1.9366511106491089,
+          1.9866511821746826
+        ]
+      ],
+      "materials": [
+        "V34 reference purple earrings"
+      ],
+      "vertices": 1000
+    },
+    "Earring stud.001": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": false,
+      "type": "MESH",
+      "geometry_sha256": "83cbfc0a04df2e366fd442f38f59958b1d05622da5a2eee8e0ba31be45a2d33a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3423706293106079,
+          0.36637064814567566
+        ],
+        [
+          -0.06310325860977173,
+          -0.03910325467586517
+        ],
+        [
+          2.0116512775421143,
+          2.035651206970215
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": 1000
+    },
+    "Earring stud": {
+      "origin": "V22 transferred object",
+      "source_geometry_unchanged": true,
+      "source_transform_unchanged": false,
+      "source_materials_unchanged": false,
+      "type": "MESH",
+      "geometry_sha256": "9e7da513d0c2176a1229eaa5a5ae01cd332a7237dbcf9692ef7be606b193eff2",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.3663707375526428,
+          -0.3423707187175751
+        ],
+        [
+          -0.06310312449932098,
+          -0.039103128015995026
+        ],
+        [
+          2.0116512775421143,
+          2.035651206970215
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": 1000
+    },
+    "V34 surface fitted fabric headband": {
+      "origin": "new anatomy or refinement geometry",
+      "source_geometry_unchanged": null,
+      "source_transform_unchanged": null,
+      "source_materials_unchanged": null,
+      "type": "MESH",
+      "geometry_sha256": "e8709fee82a9610481c7d3696f2e9222f26a3388b2c9b86d93bb9d99e537e16e",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.3435523509979248,
+          0.3435523509979248
+        ],
+        [
+          -0.24143803119659424,
+          -0.1338292807340622
+        ],
+        [
+          2.4036505222320557,
+          2.6117312908172607
+        ]
+      ],
+      "materials": [
+        "Headband rich magenta"
+      ],
+      "vertices": 162
+    }
+  },
+  "source_earring_objects": {
+    "Earring stud": {
+      "type": "MESH",
+      "geometry_sha256": "9e7da513d0c2176a1229eaa5a5ae01cd332a7237dbcf9692ef7be606b193eff2",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.46000000834465027,
+          -0.4359999895095825
+        ],
+        [
+          -0.07400000095367432,
+          -0.05000000074505806
+        ],
+        [
+          1.9229999780654907,
+          1.9469999074935913
+        ]
+      ],
+      "materials": [
+        "Amina body complexion"
+      ],
+      "vertices": 1000
+    },
+    "Purple drop earring": {
+      "type": "CURVE",
+      "geometry_sha256": "04941b2b3dc0a4ec54d3bb1395b29c8213a521369cd278e39545cacb94d65de3",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.4576554298400879,
+          -0.4433445632457733
+        ],
+        [
+          -0.07199999690055847,
+          -0.057999998331069946
+        ],
+        [
+          1.8838375806808472,
+          1.925162434577942
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Purple earring bead": {
+      "type": "MESH",
+      "geometry_sha256": "ef328084b8378ef948a90a819dcc335701e96abbbc1922932bdf85ef68b55c78",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.4699999988079071,
+          -0.4320000112056732
+        ],
+        [
+          -0.07999999821186066,
+          -0.05000000074505806
+        ],
+        [
+          1.847999930381775,
+          1.8980000019073486
+        ]
+      ],
+      "materials": [
+        "Magenta headband"
+      ],
+      "vertices": 1000
+    },
+    "Earring stud.001": {
+      "type": "MESH",
+      "geometry_sha256": "83cbfc0a04df2e366fd442f38f59958b1d05622da5a2eee8e0ba31be45a2d33a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.4359999895095825,
+          0.46000000834465027
+        ],
+        [
+          -0.07400000095367432,
+          -0.05000000074505806
+        ],
+        [
+          1.9229999780654907,
+          1.9469999074935913
+        ]
+      ],
+      "materials": [
+        "Amina body complexion"
+      ],
+      "vertices": 1000
+    },
+    "Purple drop earring.001": {
+      "type": "CURVE",
+      "geometry_sha256": "328184ea4170bf76809760f78aa2a4ec18577588ca9d0a80a560fc27a4a8132a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.4433445632457733,
+          0.4576554298400879
+        ],
+        [
+          -0.07199999690055847,
+          -0.057999998331069946
+        ],
+        [
+          1.8838375806808472,
+          1.925162434577942
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Purple earring bead.001": {
+      "type": "MESH",
+      "geometry_sha256": "eabee49b144c2f64883c4ea6051f36723b09a677a1eca4e52185438ae504c7c7",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.4320000112056732,
+          0.4699999988079071
+        ],
+        [
+          -0.07999999821186066,
+          -0.05000000074505806
+        ],
+        [
+          1.847999930381775,
+          1.8980000019073486
+        ]
+      ],
+      "materials": [
+        "Magenta headband"
+      ],
+      "vertices": 1000
+    }
+  },
+  "target_earring_objects": {
+    "Purple drop earring.001": {
+      "type": "CURVE",
+      "geometry_sha256": "328184ea4170bf76809760f78aa2a4ec18577588ca9d0a80a560fc27a4a8132a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3497152030467987,
+          0.3640260696411133
+        ],
+        [
+          -0.061103250831365585,
+          -0.04710325226187706
+        ],
+        [
+          1.9724887609481812,
+          2.0138137340545654
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Purple drop earring": {
+      "type": "CURVE",
+      "geometry_sha256": "04941b2b3dc0a4ec54d3bb1395b29c8213a521369cd278e39545cacb94d65de3",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.36402615904808044,
+          -0.34971529245376587
+        ],
+        [
+          -0.06110312417149544,
+          -0.04710312560200691
+        ],
+        [
+          1.9724887609481812,
+          2.0138137340545654
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": null
+    },
+    "Purple earring bead.001": {
+      "type": "MESH",
+      "geometry_sha256": "eabee49b144c2f64883c4ea6051f36723b09a677a1eca4e52185438ae504c7c7",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3383706510066986,
+          0.3763706386089325
+        ],
+        [
+          -0.06910325586795807,
+          -0.03910325467586517
+        ],
+        [
+          1.9366511106491089,
+          1.9866511821746826
+        ]
+      ],
+      "materials": [
+        "V34 reference purple earrings"
+      ],
+      "vertices": 1000
+    },
+    "Purple earring bead": {
+      "type": "MESH",
+      "geometry_sha256": "ef328084b8378ef948a90a819dcc335701e96abbbc1922932bdf85ef68b55c78",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.37637072801589966,
+          -0.33837074041366577
+        ],
+        [
+          -0.06910312175750732,
+          -0.039103128015995026
+        ],
+        [
+          1.9366511106491089,
+          1.9866511821746826
+        ]
+      ],
+      "materials": [
+        "V34 reference purple earrings"
+      ],
+      "vertices": 1000
+    },
+    "Earring stud.001": {
+      "type": "MESH",
+      "geometry_sha256": "83cbfc0a04df2e366fd442f38f59958b1d05622da5a2eee8e0ba31be45a2d33a",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.09362936019897461
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896746069192886
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          0.3423706293106079,
+          0.36637064814567566
+        ],
+        [
+          -0.06310325860977173,
+          -0.03910325467586517
+        ],
+        [
+          2.0116512775421143,
+          2.035651206970215
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": 1000
+    },
+    "Earring stud": {
+      "type": "MESH",
+      "geometry_sha256": "9e7da513d0c2176a1229eaa5a5ae01cd332a7237dbcf9692ef7be606b193eff2",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09362927079200745
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.010896872729063034
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.011348821222782135
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds": [
+        [
+          -0.3663707375526428,
+          -0.3423707187175751
+        ],
+        [
+          -0.06310312449932098,
+          -0.039103128015995026
+        ],
+        [
+          2.0116512775421143,
+          2.035651206970215
+        ]
+      ],
+      "materials": [
+        "Brass buttons"
+      ],
+      "vertices": 1000
+    }
+  },
+  "omitted_source_objects": [
+    "Amina V18 connected body with shaped hands",
+    "Amina V18 connected cotton tee",
+    "Amina V18 shaped overall shorts",
+    "Amina V18 tailored denim bib",
+    "Amina baby hair at temple",
+    "Amina baby hair at temple.001",
+    "Amina baby hair at temple.002",
+    "Amina baby hair at temple.003",
+    "Amina baby hair at temple.004",
+    "Amina baby hair at temple.005",
+    "Amina baby hair at temple.006",
+    "Amina baby hair at temple.007",
+    "Amina baby hair at temple.008",
+    "Amina baby hair at temple.009",
+    "Amina baby hair at temple.010",
+    "Amina baby hair at temple.011",
+    "Amina baby hair at temple.012",
+    "Amina baby hair at temple.013",
+    "Amina baby hair at temple.014",
+    "Amina baby hair at temple.015",
+    "Amina baby hair at temple.016",
+    "Amina baby hair at temple.017",
+    "Amina baby hair at temple.018",
+    "Amina baby hair at temple.019",
+    "Amina baby hair at temple.020",
+    "Amina baby hair at temple.021",
+    "Amina baby hair at temple.022",
+    "Amina baby hair at temple.023",
+    "Amina baby hair at temple.024",
+    "Amina baby hair at temple.025",
+    "Amina baby hair at temple.026",
+    "Amina baby hair at temple.027",
+    "Amina baby hair at temple.028",
+    "Amina baby hair at temple.029",
+    "Amina baby hair at temple.030",
+    "Amina baby hair at temple.031",
+    "Amina baby hair at temple.032",
+    "Amina baby hair at temple.033",
+    "Amina baby hair at temple.034",
+    "Amina baby hair at temple.035",
+    "Amina baby hair at temple.036",
+    "Amina baby hair at temple.037",
+    "Amina baby hair at temple.038",
+    "Amina baby hair at temple.039",
+    "Amina baby hair at temple.040",
+    "Amina baby hair at temple.041",
+    "Amina baby hair at temple.042",
+    "Amina baby hair at temple.043",
+    "Amina baby hair at temple.044",
+    "Amina baby hair at temple.045",
+    "Amina baby hair at temple.046",
+    "Amina baby hair at temple.047",
+    "Amina baby hair at temple.048",
+    "Amina baby hair at temple.049",
+    "Amina baby hair at temple.050",
+    "Amina baby hair at temple.051",
+    "Amina baby hair at temple.052",
+    "Amina baby hair at temple.053",
+    "Amina baby hair at temple.054",
+    "Amina baby hair at temple.055",
+    "Amina baby hair at temple.056",
+    "Amina baby hair at temple.057",
+    "Amina baby hair at temple.058",
+    "Amina baby hair at temple.059",
+    "Amina baby hair at temple.060",
+    "Amina baby hair at temple.061",
+    "Amina baby hair at temple.062",
+    "Amina baby hair at temple.063",
+    "Amina baby hair at temple.064",
+    "Amina baby hair at temple.065",
+    "Amina baby hair at temple.066",
+    "Amina baby hair at temple.067",
+    "Amina baby hair at temple.068",
+    "Amina baby hair at temple.069",
+    "Amina baby hair at temple.070",
+    "Amina baby hair at temple.071",
+    "Amina baby hair at temple.072",
+    "Amina baby hair at temple.073",
+    "Amina baby hair at temple.074",
+    "Amina baby hair at temple.075",
+    "Amina baby hair at temple.076",
+    "Amina baby hair at temple.077",
+    "Amina baby hair at temple.078",
+    "Amina baby hair at temple.079",
+    "Amina baby hair at temple.080",
+    "Amina baby hair at temple.081",
+    "Amina baby hair at temple.082",
+    "Amina baby hair at temple.083",
+    "Amina baby hair at temple.084",
+    "Amina baby hair at temple.085",
+    "Amina baby hair at temple.086",
+    "Amina baby hair at temple.087",
+    "Amina baby hair at temple.088",
+    "Amina baby hair at temple.089",
+    "Amina baby hair at temple.090",
+    "Amina baby hair at temple.091",
+    "Amina baby hair at temple.092",
+    "Amina baby hair at temple.093",
+    "Amina baby hair at temple.094",
+    "Amina baby hair at temple.095",
+    "Amina baby hair at temple.096",
+    "Amina baby hair at temple.097",
+    "Amina baby hair at temple.098",
+    "Amina baby hair at temple.099",
+    "Amina concha fold",
+    "Amina concha fold.001",
+    "Amina connected facial surface with socket and lip loops",
+    "Amina curved upper teeth",
+    "Amina embroidered flower petal",
+    "Amina embroidered flower petal.001",
+    "Amina embroidered flower petal.002",
+    "Amina embroidered flower petal.003",
+    "Amina embroidered flower petal.004",
+    "Amina fabric headband",
+    "Amina fine upper lash",
+    "Amina fine upper lash.001",
+    "Amina fitted scalp and pulled hair",
+    "Amina flat overall strap",
+    "Amina flat overall strap.001",
+    "Amina individual eyelash",
+    "Amina individual eyelash.001",
+    "Amina individual eyelash.002",
+    "Amina individual eyelash.003",
+    "Amina individual eyelash.004",
+    "Amina individual eyelash.005",
+    "Amina individual eyelash.006",
+    "Amina individual eyelash.007",
+    "Amina individual eyelash.008",
+    "Amina individual eyelash.009",
+    "Amina individual eyelash.010",
+    "Amina individual eyelash.011",
+    "Amina nostril fold",
+    "Amina nostril fold.001",
+    "Amina recessed oral lining",
+    "Amina strap topstitch",
+    "Amina strap topstitch.001",
+    "Amina strap topstitch.002",
+    "Amina strap topstitch.003",
+    "Amina swept scalp strand",
+    "Amina swept scalp strand.001",
+    "Amina swept scalp strand.002",
+    "Amina swept scalp strand.003",
+    "Amina swept scalp strand.004",
+    "Amina swept scalp strand.005",
+    "Amina swept scalp strand.006",
+    "Amina swept scalp strand.007",
+    "Amina swept scalp strand.008",
+    "Amina swept scalp strand.009",
+    "Amina swept scalp strand.010",
+    "Amina swept scalp strand.011",
+    "Amina swept scalp strand.012",
+    "Amina swept scalp strand.013",
+    "Amina swept scalp strand.014",
+    "Amina swept scalp strand.015",
+    "Amina swept scalp strand.016",
+    "Amina swept scalp strand.017",
+    "Amina swept scalp strand.018",
+    "Amina swept scalp strand.019",
+    "Amina swept scalp strand.020",
+    "Amina swept scalp strand.021",
+    "Amina swept scalp strand.022",
+    "Amina swept scalp strand.023",
+    "Amina swept scalp strand.024",
+    "Amina swept scalp strand.025",
+    "Amina swept scalp strand.026",
+    "Amina swept scalp strand.027",
+    "Amina swept scalp strand.028",
+    "Amina swept scalp strand.029",
+    "Amina swept scalp strand.030",
+    "Amina swept scalp strand.031",
+    "Amina swept scalp strand.032",
+    "Amina swept scalp strand.033",
+    "Amina swept scalp strand.034",
+    "Amina swept scalp strand.035",
+    "Amina swept scalp strand.036",
+    "Amina swept scalp strand.037",
+    "Amina swept scalp strand.038",
+    "Amina swept scalp strand.039",
+    "Amina swept scalp strand.040",
+    "Amina swept scalp strand.041",
+    "Amina swept scalp strand.042",
+    "Amina swept scalp strand.043",
+    "Amina swept scalp strand.044",
+    "Amina swept scalp strand.045",
+    "Amina swept scalp strand.046",
+    "Amina swept scalp strand.047",
+    "Amina swept scalp strand.048",
+    "Amina swept scalp strand.049",
+    "Amina swept scalp strand.050",
+    "Amina swept scalp strand.051",
+    "Amina swept scalp strand.052",
+    "Amina swept scalp strand.053",
+    "Amina swept scalp strand.054",
+    "Amina swept scalp strand.055",
+    "Amina swept scalp strand.056",
+    "Amina swept scalp strand.057",
+    "Amina swept scalp strand.058",
+    "Amina swept scalp strand.059",
+    "Amina swept scalp strand.060",
+    "Amina swept scalp strand.061",
+    "Amina swept scalp strand.062",
+    "Amina swept scalp strand.063",
+    "Amina swept scalp strand.064",
+    "Amina swept scalp strand.065",
+    "Amina swept scalp strand.066",
+    "Amina swept scalp strand.067",
+    "Amina swept scalp strand.068",
+    "Amina swept scalp strand.069",
+    "Amina swept scalp strand.070",
+    "Amina swept scalp strand.071",
+    "Amina swept scalp strand.072",
+    "Amina swept scalp strand.073",
+    "Amina swept scalp strand.074",
+    "Amina swept scalp strand.075",
+    "Amina swept scalp strand.076",
+    "Amina swept scalp strand.077",
+    "Amina swept scalp strand.078",
+    "Amina swept scalp strand.079",
+    "Amina swept scalp strand.080",
+    "Amina swept scalp strand.081",
+    "Amina swept scalp strand.082",
+    "Amina swept scalp strand.083",
+    "Amina swept scalp strand.084",
+    "Amina swept scalp strand.085",
+    "Amina swept scalp strand.086",
+    "Amina swept scalp strand.087",
+    "Amina swept scalp strand.088",
+    "Amina swept scalp strand.089",
+    "Amina swept scalp strand.090",
+    "Amina swept scalp strand.091",
+    "Amina swept scalp strand.092",
+    "Amina swept scalp strand.093",
+    "Amina swept scalp strand.094",
+    "Amina swept scalp strand.095",
+    "Amina swept scalp strand.096",
+    "Amina swept scalp strand.097",
+    "Amina swept scalp strand.098",
+    "Amina swept scalp strand.099",
+    "Amina swept scalp strand.100",
+    "Amina swept scalp strand.101",
+    "Amina swept scalp strand.102",
+    "Amina swept scalp strand.103",
+    "Amina swept scalp strand.104",
+    "Amina swept scalp strand.105",
+    "Amina swept scalp strand.106",
+    "Amina swept scalp strand.107",
+    "Amina swept scalp strand.108",
+    "Amina swept scalp strand.109",
+    "Amina swept scalp strand.110",
+    "Amina swept scalp strand.111",
+    "Amina swept scalp strand.112",
+    "Amina swept scalp strand.113",
+    "Amina swept scalp strand.114",
+    "Amina swept scalp strand.115",
+    "Amina swept scalp strand.116",
+    "Amina swept scalp strand.117",
+    "Amina swept scalp strand.118",
+    "Amina swept scalp strand.119",
+    "Amina swept scalp strand.120",
+    "Amina swept scalp strand.121",
+    "Amina swept scalp strand.122",
+    "Amina swept scalp strand.123",
+    "Amina swept scalp strand.124",
+    "Amina swept scalp strand.125",
+    "Amina swept scalp strand.126",
+    "Amina swept scalp strand.127",
+    "Amina swept scalp strand.128",
+    "Amina swept scalp strand.129",
+    "Amina swept scalp strand.130",
+    "Amina swept scalp strand.131",
+    "Amina swept scalp strand.132",
+    "Amina swept scalp strand.133",
+    "Amina swept scalp strand.134",
+    "Amina swept scalp strand.135",
+    "Amina swept scalp strand.136",
+    "Amina swept scalp strand.137",
+    "Amina swept scalp strand.138",
+    "Amina swept scalp strand.139",
+    "Amina swept scalp strand.140",
+    "Amina swept scalp strand.141",
+    "Amina swept scalp strand.142",
+    "Amina swept scalp strand.143",
+    "Amina swept scalp strand.144",
+    "Amina swept scalp strand.145",
+    "Amina swept scalp strand.146",
+    "Amina swept scalp strand.147",
+    "Amina swept scalp strand.148",
+    "Amina swept scalp strand.149",
+    "Amina swept scalp strand.150",
+    "Amina swept scalp strand.151",
+    "Amina swept scalp strand.152",
+    "Amina swept scalp strand.153",
+    "Amina swept scalp strand.154",
+    "Amina swept scalp strand.155",
+    "Amina swept scalp strand.156",
+    "Amina swept scalp strand.157",
+    "Amina swept scalp strand.158",
+    "Amina swept scalp strand.159",
+    "Amina swept scalp strand.160",
+    "Amina swept scalp strand.161",
+    "Amina swept scalp strand.162",
+    "Amina swept scalp strand.163",
+    "Amina swept scalp strand.164",
+    "Amina swept scalp strand.165",
+    "Amina swept scalp strand.166",
+    "Amina swept scalp strand.167",
+    "Amina swept scalp strand.168",
+    "Amina swept scalp strand.169",
+    "Amina swept scalp strand.170",
+    "Amina swept scalp strand.171",
+    "Amina swept scalp strand.172",
+    "Amina swept scalp strand.173",
+    "Amina swept scalp strand.174",
+    "Amina swept scalp strand.175",
+    "Amina swept scalp strand.176",
+    "Amina swept scalp strand.177",
+    "Amina swept scalp strand.178",
+    "Amina swept scalp strand.179",
+    "Amina swept scalp strand.180",
+    "Amina swept scalp strand.181",
+    "Amina swept scalp strand.182",
+    "Amina swept scalp strand.183",
+    "Amina swept scalp strand.184",
+    "Amina swept scalp strand.185",
+    "Amina swept scalp strand.186",
+    "Amina swept scalp strand.187",
+    "Amina swept scalp strand.188",
+    "Amina swept scalp strand.189",
+    "Amina swept scalp strand.190",
+    "Amina swept scalp strand.191",
+    "Amina swept scalp strand.192",
+    "Amina swept scalp strand.193",
+    "Amina swept scalp strand.194",
+    "Amina swept scalp strand.195",
+    "Amina swept scalp strand.196",
+    "Amina swept scalp strand.197",
+    "Amina swept scalp strand.198",
+    "Amina swept scalp strand.199",
+    "Amina swept scalp strand.200",
+    "Amina swept scalp strand.201",
+    "Amina swept scalp strand.202",
+    "Amina swept scalp strand.203",
+    "Amina swept scalp strand.204",
+    "Amina swept scalp strand.205",
+    "Amina swept scalp strand.206",
+    "Amina swept scalp strand.207",
+    "Amina swept scalp strand.208",
+    "Amina swept scalp strand.209",
+    "Amina swept scalp strand.210",
+    "Amina swept scalp strand.211",
+    "Amina swept scalp strand.212",
+    "Amina swept scalp strand.213",
+    "Amina swept scalp strand.214",
+    "Amina swept scalp strand.215",
+    "Amina swept scalp strand.216",
+    "Amina swept scalp strand.217",
+    "Amina swept scalp strand.218",
+    "Amina swept scalp strand.219",
+    "Amina swept scalp strand.220",
+    "Amina swept scalp strand.221",
+    "Amina swept scalp strand.222",
+    "Amina swept scalp strand.223",
+    "Amina swept scalp strand.224",
+    "Amina swept scalp strand.225",
+    "Amina swept scalp strand.226",
+    "Amina swept scalp strand.227",
+    "Amina swept scalp strand.228",
+    "Amina swept scalp strand.229",
+    "Amina swept scalp strand.230",
+    "Amina swept scalp strand.231",
+    "Amina swept scalp strand.232",
+    "Amina swept scalp strand.233",
+    "Amina swept scalp strand.234",
+    "Amina swept scalp strand.235",
+    "Amina swept scalp strand.236",
+    "Amina swept scalp strand.237",
+    "Amina swept scalp strand.238",
+    "Amina swept scalp strand.239",
+    "Amina swept scalp strand.240",
+    "Amina swept scalp strand.241",
+    "Amina swept scalp strand.242",
+    "Amina swept scalp strand.243",
+    "Amina swept scalp strand.244",
+    "Amina swept scalp strand.245",
+    "Amina swept scalp strand.246",
+    "Amina swept scalp strand.247",
+    "Amina swept scalp strand.248",
+    "Amina swept scalp strand.249",
+    "Amina swept scalp strand.250",
+    "Amina swept scalp strand.251",
+    "Amina swept scalp strand.252",
+    "Amina swept scalp strand.253",
+    "Amina swept scalp strand.254",
+    "Amina swept scalp strand.255",
+    "Amina swept scalp strand.256",
+    "Amina swept scalp strand.257",
+    "Amina swept scalp strand.258",
+    "Amina swept scalp strand.259",
+    "Amina swept scalp strand.260",
+    "Amina swept scalp strand.261",
+    "Amina swept scalp strand.262",
+    "Amina swept scalp strand.263",
+    "Amina swept scalp strand.264",
+    "Amina swept scalp strand.265",
+    "Amina swept scalp strand.266",
+    "Amina swept scalp strand.267",
+    "Amina swept scalp strand.268",
+    "Amina swept scalp strand.269",
+    "Amina swept scalp strand.270",
+    "Amina swept scalp strand.271",
+    "Amina swept scalp strand.272",
+    "Amina swept scalp strand.273",
+    "Amina swept scalp strand.274",
+    "Amina swept scalp strand.275",
+    "Amina swept scalp strand.276",
+    "Amina swept scalp strand.277",
+    "Amina swept scalp strand.278",
+    "Amina swept scalp strand.279",
+    "Amina swept scalp strand.280",
+    "Amina swept scalp strand.281",
+    "Amina swept scalp strand.282",
+    "Amina swept scalp strand.283",
+    "Amina swept scalp strand.284",
+    "Amina swept scalp strand.285",
+    "Amina swept scalp strand.286",
+    "Amina swept scalp strand.287",
+    "Amina swept scalp strand.288",
+    "Amina swept scalp strand.289",
+    "Amina swept scalp strand.290",
+    "Amina swept scalp strand.291",
+    "Amina swept scalp strand.292",
+    "Amina swept scalp strand.293",
+    "Amina swept scalp strand.294",
+    "Amina swept scalp strand.295",
+    "Amina swept scalp strand.296",
+    "Amina swept scalp strand.297",
+    "Amina swept scalp strand.298",
+    "Amina swept scalp strand.299",
+    "Amina swept scalp strand.300",
+    "Amina swept scalp strand.301",
+    "Amina swept scalp strand.302",
+    "Amina swept scalp strand.303",
+    "Amina swept scalp strand.304",
+    "Amina swept scalp strand.305",
+    "Amina swept scalp strand.306",
+    "Amina swept scalp strand.307",
+    "Amina swept scalp strand.308",
+    "Amina swept scalp strand.309",
+    "Amina swept scalp strand.310",
+    "Amina swept scalp strand.311",
+    "Amina swept scalp strand.312",
+    "Amina swept scalp strand.313",
+    "Amina swept scalp strand.314",
+    "Amina swept scalp strand.315",
+    "Amina swept scalp strand.316",
+    "Amina swept scalp strand.317",
+    "Amina swept scalp strand.318",
+    "Amina swept scalp strand.319",
+    "Amina swept scalp strand.320",
+    "Amina swept scalp strand.321",
+    "Amina swept scalp strand.322",
+    "Amina swept scalp strand.323",
+    "Amina swept scalp strand.324",
+    "Amina swept scalp strand.325",
+    "Amina swept scalp strand.326",
+    "Amina swept scalp strand.327",
+    "Amina swept scalp strand.328",
+    "Amina swept scalp strand.329",
+    "Amina swept scalp strand.330",
+    "Amina swept scalp strand.331",
+    "Amina swept scalp strand.332",
+    "Amina swept scalp strand.333",
+    "Amina swept scalp strand.334",
+    "Amina swept scalp strand.335",
+    "Amina swept scalp strand.336",
+    "Amina swept scalp strand.337",
+    "Amina swept scalp strand.338",
+    "Amina swept scalp strand.339",
+    "Amina swept scalp strand.340",
+    "Amina swept scalp strand.341",
+    "Amina swept scalp strand.342",
+    "Amina swept scalp strand.343",
+    "Amina swept scalp strand.344",
+    "Amina swept scalp strand.345",
+    "Amina swept scalp strand.346",
+    "Amina swept scalp strand.347",
+    "Amina swept scalp strand.348",
+    "Amina swept scalp strand.349",
+    "Amina swept scalp strand.350",
+    "Amina swept scalp strand.351",
+    "Amina swept scalp strand.352",
+    "Amina swept scalp strand.353",
+    "Amina swept scalp strand.354",
+    "Amina swept scalp strand.355",
+    "Amina swept scalp strand.356",
+    "Amina swept scalp strand.357",
+    "Amina swept scalp strand.358",
+    "Amina swept scalp strand.359",
+    "Amina tapered eyebrow",
+    "Amina tapered eyebrow.001",
+    "Amina tongue inside smile",
+    "Brass button",
+    "Brass button.001",
+    "Ear",
+    "Ear.001",
+    "Flower centre",
+    "Iris radial fibre",
+    "Iris radial fibre.001",
+    "Iris radial fibre.002",
+    "Iris radial fibre.003",
+    "Iris radial fibre.004",
+    "Iris radial fibre.005",
+    "Iris radial fibre.006",
+    "Iris radial fibre.007",
+    "Iris radial fibre.008",
+    "Iris radial fibre.009",
+    "Iris radial fibre.010",
+    "Iris radial fibre.011",
+    "Iris radial fibre.012",
+    "Iris radial fibre.013",
+    "Iris radial fibre.014",
+    "Iris radial fibre.015",
+    "Iris radial fibre.016",
+    "Iris radial fibre.017",
+    "Iris radial fibre.018",
+    "Iris radial fibre.019",
+    "Iris radial fibre.020",
+    "Iris radial fibre.021",
+    "Iris radial fibre.022",
+    "Iris radial fibre.023",
+    "Iris radial fibre.024",
+    "Iris radial fibre.025",
+    "Iris radial fibre.026",
+    "Iris radial fibre.027",
+    "Iris radial fibre.028",
+    "Iris radial fibre.029",
+    "Iris radial fibre.030",
+    "Iris radial fibre.031",
+    "Iris radial fibre.032",
+    "Iris radial fibre.033",
+    "Iris radial fibre.034",
+    "Iris radial fibre.035",
+    "Iris radial fibre.036",
+    "Iris radial fibre.037",
+    "Iris radial fibre.038",
+    "Iris radial fibre.039",
+    "Iris radial fibre.040",
+    "Iris radial fibre.041",
+    "Iris radial fibre.042",
+    "Iris radial fibre.043",
+    "Iris radial fibre.044",
+    "Iris radial fibre.045",
+    "Iris radial fibre.046",
+    "Iris radial fibre.047",
+    "Iris radial fibre.048",
+    "Iris radial fibre.049",
+    "Iris radial fibre.050",
+    "Iris radial fibre.051",
+    "Iris radial fibre.052",
+    "Iris radial fibre.053",
+    "Iris radial fibre.054",
+    "Iris radial fibre.055",
+    "Iris radial fibre.056",
+    "Iris radial fibre.057",
+    "Iris radial fibre.058",
+    "Iris radial fibre.059",
+    "Iris radial fibre.060",
+    "Iris radial fibre.061",
+    "Iris radial fibre.062",
+    "Iris radial fibre.063",
+    "Iris radial fibre.064",
+    "Iris radial fibre.065",
+    "Iris radial fibre.066",
+    "Iris radial fibre.067",
+    "Iris radial fibre.068",
+    "Iris radial fibre.069",
+    "Iris radial fibre.070",
+    "Iris radial fibre.071",
+    "Iris radial fibre.072",
+    "Iris radial fibre.073",
+    "Iris radial fibre.074",
+    "Iris radial fibre.075",
+    "Iris radial fibre.076",
+    "Iris radial fibre.077",
+    "Iris radial fibre.078",
+    "Iris radial fibre.079",
+    "Iris radial fibre.080",
+    "Iris radial fibre.081",
+    "Iris radial fibre.082",
+    "Iris radial fibre.083",
+    "Iris radial fibre.084",
+    "Iris radial fibre.085",
+    "Iris radial fibre.086",
+    "Iris radial fibre.087",
+    "Iris radial fibre.088",
+    "Iris radial fibre.089",
+    "Iris radial fibre.090",
+    "Iris radial fibre.091",
+    "Iris radial fibre.092",
+    "Iris radial fibre.093",
+    "Iris radial fibre.094",
+    "Iris radial fibre.095",
+    "Iris radial fibre.096",
+    "Iris radial fibre.097",
+    "Iris radial fibre.098",
+    "Iris radial fibre.099",
+    "Iris radial fibre.100",
+    "Iris radial fibre.101",
+    "Iris radial fibre.102",
+    "Iris radial fibre.103",
+    "Iris radial fibre.104",
+    "Iris radial fibre.105",
+    "Iris radial fibre.106",
+    "Iris radial fibre.107",
+    "Iris radial fibre.108",
+    "Iris radial fibre.109",
+    "Iris radial fibre.110",
+    "Iris radial fibre.111",
+    "Iris radial fibre.112",
+    "Iris radial fibre.113",
+    "Iris radial fibre.114",
+    "Iris radial fibre.115",
+    "Iris radial fibre.116",
+    "Iris radial fibre.117",
+    "Iris radial fibre.118",
+    "Iris radial fibre.119",
+    "Iris radial fibre.120",
+    "Iris radial fibre.121",
+    "Iris radial fibre.122",
+    "Iris radial fibre.123",
+    "Iris radial fibre.124",
+    "Iris radial fibre.125",
+    "Iris radial fibre.126",
+    "Iris radial fibre.127",
+    "Iris radial fibre.128",
+    "Iris radial fibre.129",
+    "Iris radial fibre.130",
+    "Iris radial fibre.131",
+    "Iris radial fibre.132",
+    "Iris radial fibre.133",
+    "Iris radial fibre.134",
+    "Iris radial fibre.135",
+    "Iris radial fibre.136",
+    "Iris radial fibre.137",
+    "Iris radial fibre.138",
+    "Iris radial fibre.139",
+    "Iris radial fibre.140",
+    "Iris radial fibre.141",
+    "Iris radial fibre.142",
+    "Iris radial fibre.143",
+    "V18 bib edge seam",
+    "V18 bib edge seam.001",
+    "V18 shorts hem seam",
+    "V18 shorts hem seam.001",
+    "V19 anatomical fingernail",
+    "V19 anatomical fingernail.001",
+    "V19 anatomical fingernail.002",
+    "V19 anatomical fingernail.003",
+    "V19 anatomical fingernail.004",
+    "V19 anatomical fingernail.005",
+    "V19 anatomical fingernail.006",
+    "V19 anatomical fingernail.007",
+    "V19 bow lace loop",
+    "V19 bow lace loop.001",
+    "V19 bow lace loop.002",
+    "V19 bow lace loop.003",
+    "V19 crossed cotton lace",
+    "V19 crossed cotton lace.001",
+    "V19 crossed cotton lace.002",
+    "V19 crossed cotton lace.003",
+    "V19 crossed cotton lace.004",
+    "V19 crossed cotton lace.005",
+    "V19 crossed cotton lace.006",
+    "V19 crossed cotton lace.007",
+    "V19 crossed cotton lace.008",
+    "V19 crossed cotton lace.009",
+    "V19 crossed cotton lace.010",
+    "V19 crossed cotton lace.011",
+    "V19 crossed cotton lace.012",
+    "V19 crossed cotton lace.013",
+    "V19 crossed cotton lace.014",
+    "V19 crossed cotton lace.015",
+    "V19 crossed cotton lace.016",
+    "V19 crossed cotton lace.017",
+    "V19 crossed cotton lace.018",
+    "V19 crossed cotton lace.019",
+    "V19 eyelet ring",
+    "V19 eyelet ring.001",
+    "V19 eyelet ring.002",
+    "V19 eyelet ring.003",
+    "V19 eyelet ring.004",
+    "V19 eyelet ring.005",
+    "V19 eyelet ring.006",
+    "V19 eyelet ring.007",
+    "V19 eyelet ring.008",
+    "V19 eyelet ring.009",
+    "V19 eyelet ring.010",
+    "V19 eyelet ring.011",
+    "V19 eyelet ring.012",
+    "V19 eyelet ring.013",
+    "V19 eyelet ring.014",
+    "V19 eyelet ring.015",
+    "V19 eyelet ring.016",
+    "V19 eyelet ring.017",
+    "V19 eyelet ring.018",
+    "V19 eyelet ring.019",
+    "V19 padded ankle collar",
+    "V19 padded ankle collar.001",
+    "V19 shaped canvas sneaker upper",
+    "V19 shaped canvas sneaker upper.001",
+    "V19 sneaker rubber sole",
+    "V19 sneaker rubber sole.001",
+    "V19 toe bumper",
+    "V19 toe bumper.001",
+    "V19 upper side stitching",
+    "V19 upper side stitching.001",
+    "V19 upper side stitching.002",
+    "V19 upper side stitching.003"
+  ],
+  "limitations": [
+    "Matching geometry hashes prove reuse, not correct fit",
+    "Bounding boxes do not prove clearance or surface attachment",
+    "V35 is a head branch; body, clothes and hands have not been integrated",
+    "Nose, cheeks, jaw and ears come from anisotropically fitted MPFB anatomy, not the old V22 head"
+  ]
+}

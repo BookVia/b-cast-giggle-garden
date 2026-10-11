@@ -1,0 +1,716 @@
+{
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "source": "V22 complete candidate, not integrated into anatomy head branch",
+  "meshes": {
+    "Amina curved upper teeth": {
+      "vertices": 147,
+      "faces": 96,
+      "quads": 96,
+      "finite": true,
+      "boundary_edges": 100,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.14499999582767487,
+          0.14499999582767487
+        ],
+        [
+          -0.3702233135700226,
+          -0.3410254716873169
+        ],
+        [
+          1.8619999885559082,
+          1.9256664514541626
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Warm ivory teeth"
+      ]
+    },
+    "Amina flat overall strap": {
+      "vertices": 74,
+      "faces": 36,
+      "quads": 36,
+      "finite": true,
+      "boundary_edges": 74,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.23130559921264648,
+          -0.12966667115688324
+        ],
+        [
+          -0.2158750295639038,
+          0.11958335340023041
+        ],
+        [
+          1.3689924478530884,
+          1.5080558061599731
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Purple denim"
+      ]
+    },
+    "Amina flat overall strap.001": {
+      "vertices": 74,
+      "faces": 36,
+      "quads": 36,
+      "finite": true,
+      "boundary_edges": 74,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.12966667115688324,
+          0.23130559921264648
+        ],
+        [
+          -0.2158750295639038,
+          0.11958335340023041
+        ],
+        [
+          1.3689924478530884,
+          1.5080558061599731
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Purple denim"
+      ]
+    },
+    "Amina embroidered flower petal": {
+      "vertices": 362,
+      "faces": 384,
+      "quads": 336,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.01600000075995922,
+          0.06199999898672104
+        ],
+        [
+          -0.2044999897480011,
+          -0.19749999046325684
+        ],
+        [
+          1.2100000381469727,
+          1.2599999904632568
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Rose lavender shirt"
+      ]
+    },
+    "Amina embroidered flower petal.001": {
+      "vertices": 362,
+      "faces": 384,
+      "quads": 336,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.010948337614536285,
+          0.03505166247487068
+        ],
+        [
+          -0.2044999897480011,
+          -0.19749999046325684
+        ],
+        [
+          1.2470911741256714,
+          1.2970912456512451
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Rose lavender shirt"
+      ]
+    },
+    "Amina embroidered flower petal.002": {
+      "vertices": 362,
+      "faces": 384,
+      "quads": 336,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.054551661014556885,
+          -0.008551662787795067
+        ],
+        [
+          -0.2044999897480011,
+          -0.19749999046325684
+        ],
+        [
+          1.2329236268997192,
+          1.2829235792160034
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Rose lavender shirt"
+      ]
+    },
+    "Amina embroidered flower petal.003": {
+      "vertices": 362,
+      "faces": 384,
+      "quads": 336,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.054551661014556885,
+          -0.008551662787795067
+        ],
+        [
+          -0.2044999897480011,
+          -0.19749999046325684
+        ],
+        [
+          1.1870763301849365,
+          1.2370764017105103
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Rose lavender shirt"
+      ]
+    },
+    "Amina embroidered flower petal.004": {
+      "vertices": 362,
+      "faces": 384,
+      "quads": 336,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.010948337614536285,
+          0.03505166247487068
+        ],
+        [
+          -0.2044999897480011,
+          -0.19749999046325684
+        ],
+        [
+          1.1729087829589844,
+          1.222908854484558
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Rose lavender shirt"
+      ]
+    },
+    "Amina V18 connected body with shaped hands": {
+      "vertices": 51394,
+      "faces": 51392,
+      "quads": 51392,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.5629286766052246,
+          0.5629597902297974
+        ],
+        [
+          -0.15238039195537567,
+          0.15238039195537567
+        ],
+        [
+          0.18999989330768585,
+          1.6800000667572021
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V18 warm skin"
+      ]
+    },
+    "Amina V18 connected cotton tee": {
+      "vertices": 22060,
+      "faces": 22058,
+      "quads": 22058,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.43537598848342896,
+          0.435375452041626
+        ],
+        [
+          -0.17046496272087097,
+          0.17046496272087097
+        ],
+        [
+          1.0449998378753662,
+          1.527592658996582
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V18 pink cotton"
+      ]
+    },
+    "Amina V18 shaped overall shorts": {
+      "vertices": 16600,
+      "faces": 16598,
+      "quads": 16598,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.28268638253211975,
+          0.28268638253211975
+        ],
+        [
+          -0.18241575360298157,
+          0.18241575360298157
+        ],
+        [
+          0.6798993349075317,
+          1.0550000667572021
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V18 purple woven denim"
+      ]
+    },
+    "Amina V18 tailored denim bib": {
+      "vertices": 825,
+      "faces": 768,
+      "quads": 768,
+      "finite": true,
+      "boundary_edges": 112,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.20999999344348907,
+          0.20999999344348907
+        ],
+        [
+          -0.1850000023841858,
+          -0.16902491450309753
+        ],
+        [
+          1.014950156211853,
+          1.4049999713897705
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V18 purple woven denim"
+      ]
+    },
+    "V19 sneaker rubber sole": {
+      "vertices": 256,
+      "faces": 194,
+      "quads": 192,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.2630000114440918,
+          -0.03700000047683716
+        ],
+        [
+          -0.2669999897480011,
+          0.14100000262260437
+        ],
+        [
+          0.017999999225139618,
+          0.052000001072883606
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 warm white rubber and laces"
+      ]
+    },
+    "V19 shaped canvas sneaker upper": {
+      "vertices": 576,
+      "faces": 512,
+      "quads": 512,
+      "finite": true,
+      "boundary_edges": 128,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.2598234713077545,
+          -0.04017656296491623
+        ],
+        [
+          -0.2596838176250458,
+          0.13368381559848785
+        ],
+        [
+          0.053075529634952545,
+          0.2479422390460968
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 pink sneaker canvas"
+      ]
+    },
+    "V19 sneaker rubber sole.001": {
+      "vertices": 256,
+      "faces": 194,
+      "quads": 192,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.03700000047683716,
+          0.2630000114440918
+        ],
+        [
+          -0.2669999897480011,
+          0.14100000262260437
+        ],
+        [
+          0.017999999225139618,
+          0.052000001072883606
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 warm white rubber and laces"
+      ]
+    },
+    "V19 shaped canvas sneaker upper.001": {
+      "vertices": 576,
+      "faces": 512,
+      "quads": 512,
+      "finite": true,
+      "boundary_edges": 128,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.04017656296491623,
+          0.2598234713077545
+        ],
+        [
+          -0.2596838176250458,
+          0.13368381559848785
+        ],
+        [
+          0.053075533360242844,
+          0.2479422390460968
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 pink sneaker canvas"
+      ]
+    },
+    "V19 anatomical fingernail": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.4440000057220459,
+          -0.42399999499320984
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.7990000247955322,
+          0.8270000219345093
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.001": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.47600001096725464,
+          -0.4560000002384186
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.777999997138977,
+          0.8059999942779541
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.002": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.5080000162124634,
+          -0.4880000054836273
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.7839999794960022,
+          0.8119999766349792
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.003": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.5400000214576721,
+          -0.5199999809265137
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.8059999942779541,
+          0.8339999914169312
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.004": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.42399999499320984,
+          0.4440000057220459
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.7990000247955322,
+          0.8270000219345093
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.005": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.4560000002384186,
+          0.47600001096725464
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.777999997138977,
+          0.8059999942779541
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.006": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.4880000054836273,
+          0.5080000162124634
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.7839999794960022,
+          0.8119999766349792
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "V19 anatomical fingernail.007": {
+      "vertices": 32,
+      "faces": 1,
+      "quads": 0,
+      "finite": true,
+      "boundary_edges": 32,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.5199999809265137,
+          0.5400000214576721
+        ],
+        [
+          -0.0860000029206276,
+          -0.0860000029206276
+        ],
+        [
+          0.8059999942779541,
+          0.8339999914169312
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "V19 subtle warm fingernails"
+      ]
+    },
+    "Brass button": {
+      "vertices": 1000,
+      "faces": 960,
+      "quads": 960,
+      "finite": true,
+      "boundary_edges": 80,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.18400000035762787,
+          -0.13600000739097595
+        ],
+        [
+          -0.2280000001192093,
+          -0.21199999749660492
+        ],
+        [
+          1.3559999465942383,
+          1.4040000438690186
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Brass buttons"
+      ]
+    },
+    "Brass button.001": {
+      "vertices": 1000,
+      "faces": 960,
+      "quads": 960,
+      "finite": true,
+      "boundary_edges": 80,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          0.13600000739097595,
+          0.18400000035762787
+        ],
+        [
+          -0.2280000001192093,
+          -0.21199999749660492
+        ],
+        [
+          1.3559999465942383,
+          1.4040000438690186
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Brass buttons"
+      ]
+    },
+    "Flower centre": {
+      "vertices": 1000,
+      "faces": 960,
+      "quads": 960,
+      "finite": true,
+      "boundary_edges": 80,
+      "overused_edges": 0,
+      "bounds": [
+        [
+          -0.023000000044703484,
+          0.023000000044703484
+        ],
+        [
+          -0.21299999952316284,
+          -0.19900000095367432
+        ],
+        [
+          1.2120000123977661,
+          1.2580000162124634
+        ]
+      ],
+      "armature_modifiers": 0,
+      "material_names": [
+        "Brass buttons"
+      ]
+    }
+  },
+  "armatures": [],
+  "visual_findings": [
+    "Pink tee, purple overalls, flower, buttons and pink shoes are present",
+    "Clothing silhouette and flat bib still differ from approved cloth construction",
+    "Hands and nail placement remain visibly unsuitable; no deformation verification",
+    "Standing review pose does not establish the approved kneeling pose or garden interaction"
+  ]
+}

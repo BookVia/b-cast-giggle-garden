@@ -1,0 +1,41 @@
+{
+  "blend_sha256": "d966cbb9751012b8effb32469856d618f27b17316cf271f51040f9c84dd5175a",
+  "meshes": {
+    "Amina anatomy refinement V35 UNAPPROVED": {
+      "vertices": 17542,
+      "faces": 16377,
+      "finite": true,
+      "boundary_edges": 0,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "V33 mouth interior": {
+      "vertices": 65,
+      "faces": 64,
+      "finite": true,
+      "boundary_edges": 64,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "V33 curved upper teeth": {
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "boundary_edges": 66,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    },
+    "V33 scalp fitted to anatomy": {
+      "vertices": 978,
+      "faces": 904,
+      "finite": true,
+      "boundary_edges": 146,
+      "overused_edges": 0,
+      "zero_area_faces": 0
+    }
+  },
+  "production_ready": false,
+  "visual_reference_passed": false,
+  "rigged": false,
+  "purpose": "Geometry integrity audit, not deformation approval"
+}
