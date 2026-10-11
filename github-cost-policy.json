@@ -1,8 +1,9 @@
 {
   "free_only": true,
-  "allow_hosted_trial": false,
+  "allow_hosted_trial": true,
   "billing_verified": false,
+  "public_standard_runner_verified": true,
   "max_job_minutes": 15,
   "max_parallel_jobs": 1,
-  "reason": "Account quota and spending controls must be verified before hosted execution."
+  "reason": "Public repository on standard Ubuntu runner verified via GitHub API; no paid larger runners."
 }

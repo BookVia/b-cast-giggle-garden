@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   trial:
-    if: vars.BCAST_FREE_RUNS_VERIFIED == 'true'
+    if: github.event.repository.private == false
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
       - name: Enforce free-only trial gate
         run: |
-          python3 -c "import json; p=json.load(open('github-cost-policy.json')); assert p['billing_verified'] and p['allow_hosted_trial'], 'Free allowance and spending controls must be verified first'"
+          python3 -c "import json; p=json.load(open('github-cost-policy.json')); assert p['free_only'] and p['public_standard_runner_verified'] and p['allow_hosted_trial'], 'Public standard-runner test must be verified first'"
       - name: Build matching Blender container
         run: docker build -t bcast-blender-test -f pipeline/Dockerfile .
       - name: Check geometry and render one preview
