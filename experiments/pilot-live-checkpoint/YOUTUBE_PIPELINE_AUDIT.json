@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-12T14:51:00.145353+00:00",
+  "rendering": "Active free standard public GitHub CPU jobs; real animated Blender scene",
+  "assembly": "Automatic verified chunk assembly and licensed audio mix",
+  "delivery": "Dashboard review player and local final MP4 after hash/full-decode checks",
+  "analytics": "Dashboard has real YouTube analytics integration; connection not configured/authorized",
+  "upload": "Current YouTube integration is read-only; upload authorization is not configured",
+  "story_ai": "Pilot story was editorially authored/reviewed. No claim that local AI can reliably write and produce subsequent episodes without review.",
+  "publishing_approved": false,
+  "current_voice": "Licensed local Kokoro bf_emma, British English; South African voice preference remains future work",
+  "sources": [
+    {
+      "url": "https://developers.google.com/youtube/v3/docs/videos/insert",
+      "verified_date": "2026-10-12",
+      "fact": "Upload needs an upload-capable OAuth scope; made-for-kids metadata is supported. Current documented upload quota is 100 calls per day, one unit in the Video Uploads quota bucket. Current docs say unverified API projects are not automatically restricted to private uploads."
+    },
+    {
+      "url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+      "fact": "Standard public runners are free; selected Ubuntu runner has four CPU cores and 16 GB RAM."
+    },
+    {
+      "url": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases",
+      "fact": "Release assets provide render inputs/outputs without Actions artifact storage; each asset stays below 2 GiB."
+    }
+  ]
+}

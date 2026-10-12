@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-12T09:23:10.402643+00:00",
+  "pilot_style_authorized": true,
+  "production_ready": false,
+  "characters": {
+    "Amina": {
+      "blend": "amina_reconstruction_v45/Amina_complete_character_candidate_UNAPPROVED.blend",
+      "sha256": "a50e2518354742c808bb805ba6a744507ca2e82520db1c41ab5528214b88cdb7",
+      "four_views_inspected": true,
+      "rigged": false
+    },
+    "Tebo": {
+      "blend": "cast_pilot_v47/Tebo_pilot_character.blend",
+      "sha256": "7b3d20c3144d0e0dc1fa5bbf02cf25175a81e44e5c30578e44d5630bbb6aca8e",
+      "four_views_inspected": true,
+      "rigged": false
+    },
+    "Kiki": {
+      "blend": "cast_pilot_v47/Kiki_pilot_character.blend",
+      "sha256": "bc99584290c81a222f562895022656b0f817d7425fc4ee6a1a1112f00805580f",
+      "four_views_inspected": true,
+      "rigged": false
+    },
+    "Luma": {
+      "blend": "cast_pilot_v47/Luma_pilot_character.blend",
+      "sha256": "99eeb0fe8a2565fccca88d690a8ef41573a81877cca73aa6c5b1c4d8d39c5a9c",
+      "four_views_inspected": true,
+      "rigged": false
+    }
+  },
+  "next_stage": "Rig and deformation verification for first episode"
+}

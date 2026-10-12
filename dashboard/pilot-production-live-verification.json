@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "pilotStatus": "PILOT RENDERING",
+  "renderStage": "RUNNING",
+  "progressPanel": true,
+  "castRigBadges": 4,
+  "noFakeVideo": true,
+  "productionReady": false,
+  "errors": []
+}

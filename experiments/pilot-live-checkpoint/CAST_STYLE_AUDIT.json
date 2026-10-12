@@ -1,0 +1,68 @@
+{
+  "cast": {
+    "Amina": {
+      "revision": "V45 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Amina_pilot_rig.blend",
+      "preview": "amina_reconstruction_v45/front.png",
+      "face_preview": "amina_reconstruction_v45/face.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "three_quarter_preview": "amina_reconstruction_v45/three_quarter.png",
+      "profile_preview": "amina_reconstruction_v45/profile.png",
+      "pilot_style_authorized": true,
+      "source_model_blend": "amina_reconstruction_v45/Amina_complete_character_candidate_UNAPPROVED.blend",
+      "pilot_pose_verified": true
+    },
+    "Tebo": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Tebo_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Tebo_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Tebo_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Tebo_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Tebo_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Tebo_pilot_character.blend",
+      "pilot_pose_verified": true
+    },
+    "Kiki": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Kiki_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Kiki_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Kiki_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Kiki_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Kiki_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Kiki_pilot_character.blend",
+      "pilot_pose_verified": true
+    },
+    "Luma": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Luma_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Luma_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Luma_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Luma_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Luma_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Luma_pilot_character.blend",
+      "pilot_pose_verified": true
+    }
+  },
+  "pilot_style_authorized": true,
+  "visual_reference_passed": false,
+  "production_ready": false,
+  "rigged": true,
+  "restricted_pilot_poses_checked": true,
+  "current_episode": "pilot-episode-01",
+  "full_video_review_pending": true,
+  "note": "Current pilot cast selected and rigged. Exact original-artwork likeness is deferred per user instruction. Earlier V39 cast audit is preserved as historical evidence."
+}

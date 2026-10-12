@@ -1,0 +1,80 @@
+{
+  "reference": "approved_reference_assets/Giggle Garden Adventure.png",
+  "production_ready": false,
+  "assets": {
+    "Amina": {
+      "revision": "V45 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Amina_pilot_rig.blend",
+      "preview": "amina_reconstruction_v45/front.png",
+      "face_preview": "amina_reconstruction_v45/face.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "three_quarter_preview": "amina_reconstruction_v45/three_quarter.png",
+      "profile_preview": "amina_reconstruction_v45/profile.png",
+      "pilot_style_authorized": true,
+      "source_model_blend": "amina_reconstruction_v45/Amina_complete_character_candidate_UNAPPROVED.blend",
+      "pilot_pose_verified": true
+    },
+    "Tebo": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Tebo_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Tebo_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Tebo_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Tebo_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Tebo_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Tebo_pilot_character.blend",
+      "pilot_pose_verified": true
+    },
+    "Kiki": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Kiki_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Kiki_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Kiki_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Kiki_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Kiki_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Kiki_pilot_character.blend",
+      "pilot_pose_verified": true
+    },
+    "Luma": {
+      "revision": "V47 pilot character / rig V3",
+      "blend": "pilot_rigs_v3/Luma_pilot_rig.blend",
+      "preview": "cast_pilot_v47/Luma_front.png",
+      "visual_reference_passed": false,
+      "rigged": true,
+      "face_preview": "cast_pilot_v47/Luma_face.png",
+      "three_quarter_preview": "cast_pilot_v47/Luma_three_quarter.png",
+      "profile_preview": "cast_pilot_v47/Luma_profile.png",
+      "face_audit": "Selected pilot appearance retained. Neutral transfer, attached features, restricted greeting/held-can/lean poses and blinks checked. Exact reference likeness deferred.",
+      "pilot_style_authorized": true,
+      "source_model_blend": "cast_pilot_v47/Luma_pilot_character.blend",
+      "pilot_pose_verified": true
+    },
+    "garden": {
+      "revision": "V10 candidate",
+      "blend": "artwork_refinement_v10/garden_candidate.blend",
+      "preview": "artwork_refinement_v10/garden_review.png",
+      "visual_reference_passed": false
+    }
+  },
+  "experiments": {
+    "AminaV16": "Rendered; rejected sparse native groom",
+    "AminaV17": "Rendered; rejected groom quality",
+    "MPFB": "Created 19158-vertex quad anatomy base in 18.77s; likeness unverified",
+    "TripoSR": "Head reconstruction completed; rejected distorted geometry",
+    "QuadriFlow": "5566 manifold quads in 5.25s; deformation unverified",
+    "AminaFeatureAudit": "Actual source geometry and transforms compared; body features audited; reports stored in tool_experiments/AMINA_FEATURE_AUDIT.json",
+    "CastStyleUpdate": "V47 selected: three complete connected-skin characters, distinct hair and outfits, aligned with current Amina; 12 views checked."
+  },
+  "note": "All four current pilot characters now have tested anatomical rigs. Neutral transfer and attachments checked; restricted greeting, held-can, gentle lean and blink poses visually reviewed. Episode scene assembly and full video checks are still in progress.",
+  "pilot_style_authorized": true,
+  "pilot_policy": "episodes/pilot-episode-01/pilot_quality_policy.json"
+}

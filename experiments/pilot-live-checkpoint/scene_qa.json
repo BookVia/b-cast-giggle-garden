@@ -1,0 +1,88 @@
+{
+  "scene_sha256": "bf20697d705debb5ccccaf75288008bb2fbad497a23e3ae6ce5a3c4338227cc4",
+  "engine": "CYCLES",
+  "technical_passed": true,
+  "visual_passed": true,
+  "frames": [
+    {
+      "shot": 0,
+      "frame": 121,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_00.png",
+      "seconds": 42.179
+    },
+    {
+      "shot": 1,
+      "frame": 513,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_01.png",
+      "seconds": 16.026
+    },
+    {
+      "shot": 2,
+      "frame": 867,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_02.png",
+      "seconds": 14.787
+    },
+    {
+      "shot": 3,
+      "frame": 1245,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_03.png",
+      "seconds": 14.819
+    },
+    {
+      "shot": 4,
+      "frame": 1589,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_04.png",
+      "seconds": 15.336
+    },
+    {
+      "shot": 5,
+      "frame": 1944,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_05.png",
+      "seconds": 16.507
+    },
+    {
+      "shot": 6,
+      "frame": 2325,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_06.png",
+      "seconds": 15.872
+    },
+    {
+      "shot": 7,
+      "frame": 2634,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_07.png",
+      "seconds": 15.004
+    },
+    {
+      "shot": 8,
+      "frame": 3059,
+      "path": "episodes\\pilot-episode-01\\cgi\\qa\\shot_08.png",
+      "seconds": 15.11
+    }
+  ],
+  "cast_motion": {
+    "Tebo_PilotRig": {
+      "hand_displacement": 0.39060802960226637,
+      "real_armature_keyframes": true
+    },
+    "Kiki_PilotRig": {
+      "hand_displacement": 0.6027625787623789,
+      "real_armature_keyframes": true
+    },
+    "Luma_PilotRig": {
+      "hand_displacement": 0.6027658848963559,
+      "real_armature_keyframes": true
+    },
+    "Amina_PilotRig": {
+      "hand_displacement": 0.6026497705352702,
+      "real_armature_keyframes": true
+    }
+  },
+  "visual_review_notes": [
+    "Current Amina/cast appearance preserved for the pilot",
+    "Hair silhouettes retained in watering shots",
+    "Shared can held and passed between actual rigged characters",
+    "Water stream lands on soil beside four separate seedlings",
+    "Earlier bright light and cropped-camera tests superseded"
+  ],
+  "visual_review_scope": "Nine representative shot frames, dedicated hand-off and prior four-character restricted-pose renders inspected. Full motion and finished video review remain pending."
+}
