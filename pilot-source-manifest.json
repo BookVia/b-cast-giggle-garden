@@ -1,0 +1,15 @@
+{
+  "scene_sha256": "8c70546c31127cf2e0fbeaa40fc4a5356458d7a9e666984c2e142ba9f6829ee2",
+  "asset_tag": "pilot-e01-input-8c70546c3112",
+  "repository": "BookVia/b-cast-giggle-garden",
+  "public_standard_runner_only": true,
+  "benchmark_job_minutes": 15,
+  "max_parallel": 2,
+  "artifact_uploads": false,
+  "caches": false,
+  "billing_mode": "Standard public runner plus GitHub release assets; no paid runners, Actions artifacts, packages or caches",
+  "blender_version": "5.2.2",
+  "blender_download": "https://download.blender.org/release/Blender5.2/blender-5.2.2-linux-x64.tar.xz",
+  "source_policy": "Current pilot style accepted; exact original artwork matching deferred; no automatic YouTube publication",
+  "technical_and_visual_qa_required": true
+}

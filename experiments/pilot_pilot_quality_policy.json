@@ -1,0 +1,15 @@
+{
+  "scope": "First pilot episode only",
+  "user_instruction": "just get all the other characters to amina\u2019s current state so that all characters have the same standard, and for now we will go with this standard for the first episode, then see how it performs on youtube then try and recreate the characters to the actual approved artwork",
+  "instruction_local_time": "2026-10-12T10:16:52+02:00",
+  "pilot_style_authorized": true,
+  "exact_artwork_matching_deferred": true,
+  "visual_reference_passed": false,
+  "allow_rigging_and_review_render": true,
+  "technical_animation_and_video_checks_required": true,
+  "automatic_publication": false,
+  "paid_tools_or_rendering_allowed": false,
+  "narrator_voice_review_required_before_release": true,
+  "preferred_future_voice": "Natural South African female/child delivery",
+  "current_local_narrator": "Kokoro bf_emma, British English; not claimed to be South African"
+}

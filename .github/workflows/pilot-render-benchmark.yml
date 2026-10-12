@@ -1,0 +1,66 @@
+name: Pilot real-scene render benchmark
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pilot-render-benchmark
+  cancel-in-progress: false
+jobs:
+  benchmark:
+    if: github.repository == 'BookVia/b-cast-giggle-garden' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        engine: [cycles, eevee]
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ENGINE: ${{ matrix.engine }}
+      LIBGL_ALWAYS_SOFTWARE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Guard free public runner and source policy
+        run: |
+          python3 - <<'PY'
+          import json,os
+          m=json.load(open('pilot-source-manifest.json'))
+          assert m['public_standard_runner_only'] and m['benchmark_job_minutes']==15
+          assert not m['artifact_uploads'] and not m['caches']
+          assert os.environ['GITHUB_REPOSITORY']=='BookVia/b-cast-giggle-garden'
+          with open(os.environ['GITHUB_ENV'],'a') as f:f.write('SOURCE_TAG='+m['asset_tag']+'\n')
+          PY
+      - name: Fetch actual pilot scene
+        run: |
+          gh release download "$SOURCE_TAG" --pattern GiggleGarden_E01_Render_Input.zip --dir render_input
+          python3 - <<'PY'
+          import zipfile
+          with zipfile.ZipFile('render_input/GiggleGarden_E01_Render_Input.zip') as z:
+            assert z.testzip() is None
+            assert set(z.namelist())=={'scene.blend','source_manifest.json','pilot_mix.wav','timing.json'}
+            z.extractall('render_input')
+          PY
+      - name: Install headless software dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb libgl1 libegl1 libxi6 libxrender1 libxfixes3 libxkbcommon0
+      - name: Fetch official Blender 5.2.2
+        run: |
+          curl -A 'Mozilla/5.0' --fail --location --retry 2 --max-time 180 https://download.blender.org/release/Blender5.2/blender-5.2.2-linux-x64.tar.xz -o blender.tar.xz
+          tar -xf blender.tar.xz
+          mv blender-5.2.2-linux-x64 blender_dir
+          ./blender_dir/blender --version
+      - name: Render and validate actual 720p animation frames
+        run: xvfb-run -a ./blender_dir/blender -b --threads 4 --python-exit-code 1 -P pipeline/pilot_ci_benchmark.py -- --engine "$ENGINE"
+      - name: Save bounded results as release assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=list(Path('output').glob('ci-*'))
+          assert p and sum(x.stat().st_size for x in p)<15*1024*1024
+          PY
+          gh release upload "$SOURCE_TAG" output/ci-"$ENGINE"-* --clobber

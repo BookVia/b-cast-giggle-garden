@@ -16,7 +16,7 @@ def snapshot():
   if not ep.is_dir() or not (ep/'story.json').exists():continue
   story=read(ep/'story.json',{})
   progress=read(ep/'pipeline_progress.json',{})
-  timing=read(ep/'local_voice_audition'/'timing.json',{})
+  timing=read(ep/'timing.json',{}) or read(ep/'local_voice_audition'/'timing.json',{})
   duration=timing.get('duration') or timing.get('total_duration_seconds') or timing.get('total_duration')
   if not duration:
    import wave
@@ -25,9 +25,13 @@ def snapshot():
     try:
      with wave.open(str(f)) as w:duration+=w.getnframes()/w.getframerate()
     except (OSError,wave.Error):pass
-  episodes.append({'id':ep.name,'title':story.get('title',ep.name),'status':story.get('status','DRAFT')+' / PRODUCTION BLOCKED','audioSeconds':round(duration,2) if duration else None,'stages':progress.get('stages',{})})
+  policy=read(ep/'pilot_quality_policy.json',{})
+  pilot=policy.get('pilot_style_authorized',False)
+  stage=progress.get('stages',{}).get('final_render',{}).get('status','PENDING')
+  status=('PILOT READY FOR REVIEW' if stage=='DONE' else 'PILOT RENDERING' if stage=='RUNNING' else 'PILOT IN PRODUCTION') if pilot else story.get('status','DRAFT')+' / PRODUCTION BLOCKED'
+  episodes.append({'id':ep.name,'title':story.get('title',ep.name),'status':status,'audioSeconds':round(duration,2) if duration else None,'stages':progress.get('stages',{}),'pilotStyleAuthorized':pilot})
  registry=read(ROOT/'CURRENT_PRODUCTION_ASSETS.json',{})
- return {'githubExtension':{'repository':read(ROOT/'tool_experiments/github_repository.json',{}),'costPolicy':read(ROOT/'bcast-github-project/github-cost-policy.json',{}),'localTrial':read(ROOT/'bcast-github-project/output/ci-result.json',{}),'hostedCheckpoint':read(ROOT/'tool_experiments/github_ci_checkpoint.json',{})},'toolResearch':{**read(ROOT/'tool_experiments'/'VERIFIED_TOOL_FINDINGS.json',{}),'characterFeatureAudit':read(ROOT/'tool_experiments'/'AMINA_FEATURE_AUDIT.json',{}),'castStyleAudit':read(ROOT/'tool_experiments'/'CAST_STYLE_AUDIT.json',{})},'featureAudit':read(ROOT/'tool_experiments'/'AMINA_FEATURE_AUDIT.json',{}),'assetRevisions':{n:{'revision':a.get('revision'),'faceAudit':a.get('face_audit','NOT VERIFIED')} for n,a in registry.get('assets',{}).items()},'generationExperiment':read(ROOT/'pipeline_audit'/'qwen17_generation_progress.json',{}),'episodes':episodes,'completedEpisodes':0,'approvedCharacters':0,'productionReady':False,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note':registry.get('note','All character and garden candidates remain unapproved. No approved rigs or finished episodes are available.')}
+ return {'githubExtension':{'repository':read(ROOT/'tool_experiments/github_repository.json',{}),'costPolicy':read(ROOT/'bcast-github-project/github-cost-policy.json',{}),'localTrial':read(ROOT/'bcast-github-project/output/ci-result.json',{}),'hostedCheckpoint':read(ROOT/'tool_experiments/github_ci_checkpoint.json',{})},'toolResearch':{**read(ROOT/'tool_experiments'/'VERIFIED_TOOL_FINDINGS.json',{}),'characterFeatureAudit':read(ROOT/'tool_experiments'/'AMINA_FEATURE_AUDIT.json',{}),'castStyleAudit':read(ROOT/'tool_experiments'/'CAST_STYLE_AUDIT.json',{})},'featureAudit':read(ROOT/'tool_experiments'/'AMINA_FEATURE_AUDIT.json',{}),'assetRevisions':{n:{'revision':a.get('revision'),'faceAudit':a.get('face_audit','NOT VERIFIED'),'pilotStyleAuthorized':a.get('pilot_style_authorized',False),'rigged':a.get('rigged',False)} for n,a in registry.get('assets',{}).items()},'generationExperiment':read(ROOT/'pipeline_audit'/'qwen17_generation_progress.json',{}),'episodes':episodes,'pilotProgress':{**read(ROOT/'episodes/pilot-episode-01/pipeline_progress.json',{}),'render':read(ROOT/'episodes/pilot-episode-01/cgi/render_progress.json',{})},'completedEpisodes':sum(e['status']=='PILOT READY FOR REVIEW' for e in episodes),'approvedCharacters':0,'productionReady':False,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'note':registry.get('note','All character and garden candidates remain unapproved. No approved rigs or finished episodes are available.')}
 def previews():
  from PIL import Image
  paths={'reference':ROOT/'approved_reference_assets'/'Giggle Garden Adventure.png'}

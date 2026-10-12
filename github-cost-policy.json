@@ -5,5 +5,14 @@
   "public_standard_runner_verified": true,
   "max_job_minutes": 15,
   "max_parallel_jobs": 1,
-  "reason": "Public repository on standard Ubuntu runner verified via GitHub API; no paid larger runners."
+  "reason": "Public repository on standard Ubuntu runner verified via GitHub API; no paid larger runners.",
+  "pilot_benchmark": {
+    "timeout_minutes": 15,
+    "max_parallel": 2,
+    "runner": "ubuntu-24.04 standard public only",
+    "paid_runners": false,
+    "actions_artifacts": false,
+    "cache": false,
+    "output": "Bounded release assets; no automatic YouTube publication"
+  }
 }

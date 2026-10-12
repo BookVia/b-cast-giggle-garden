@@ -1,0 +1,37 @@
+{
+  "episode": "pilot-episode-01",
+  "stages": {
+    "script_quality": {
+      "status": "DONE",
+      "detail": "New distinct nine-scene story; correct four child identities; no instant growth claims"
+    },
+    "cast_alignment": {
+      "status": "DONE",
+      "detail": "Amina V45 and Tebo/Kiki/Luma V47 selected. Four views of each visually inspected; pilot style authorized."
+    },
+    "voice": {
+      "status": "DONE",
+      "detail": "133.38 seconds of local licensed narration, generated for pilot review; listening approval pending"
+    },
+    "rigging": {
+      "status": "DONE",
+      "detail": "Four actual character rigs with restricted pilot poses visually inspected; unchanged neutral skin/attachments verified. Extreme waves rejected."
+    },
+    "final_render": {
+      "status": "PENDING"
+    },
+    "youtube": {
+      "status": "PENDING",
+      "detail": "Finished reviewed pilot and channel authorization required"
+    },
+    "audio": {
+      "status": "DONE",
+      "detail": "133.375 seconds at 48kHz stereo; licensed local narration and original music/effects. No clipping; listening review pending."
+    },
+    "animation": {
+      "status": "RUNNING",
+      "detail": "Building nine animated shots with the shared can, garden and actual rigged cast."
+    }
+  },
+  "production_ready": false
+}

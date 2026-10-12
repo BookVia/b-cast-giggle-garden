@@ -1,0 +1,81 @@
+{
+  "title": "Everyone Gets a Turn",
+  "series": "Giggle Garden",
+  "episode_number": 1,
+  "learning_goal": "Taking turns, thanking friends and gently caring for seedlings",
+  "age_group": "4-6",
+  "status": "PILOT_EDITORIAL_REVIEWED",
+  "characters": [
+    "Amina",
+    "Tebo",
+    "Kiki",
+    "Luma"
+  ],
+  "narration_style": "One warm narrator tells the story; the four children act out the events",
+  "scenes": [
+    {
+      "narration": "Welcome to Giggle Garden! Amina, Tebo, Kiki and Luma are ready to care for their little plants. The sun is warm, the flowers are bright, and the seedlings need a gentle drink. There is just one pink watering can.",
+      "speaker": "Narrator",
+      "action": "arrive",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; arrive"
+    },
+    {
+      "narration": "Everyone wants to help. Tebo reaches for the can. Kiki reaches too. Luma looks at the thirsty seedlings, and Amina looks at their friends. Four helpers, but only one can! How can everyone have a turn?",
+      "speaker": "Narrator",
+      "action": "notice_can",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; notice can"
+    },
+    {
+      "narration": "Amina has an idea. Let's take turns! Tebo can go first, then Kiki, then Luma. Amina will have the last turn. The friends nod and smile. A little plan can make sharing much easier.",
+      "speaker": "Narrator",
+      "action": "plan_turns",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; plan turns"
+    },
+    {
+      "narration": "Tebo lifts the watering can carefully. A small stream of water falls onto the soil beside the first seedling. One, two, three! That's enough for now. The roots can take a drink without a big puddle.",
+      "speaker": "Narrator",
+      "action": "tebo_water",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; tebo water"
+    },
+    {
+      "narration": "Now it is Kiki's turn. Tebo passes the can gently, and Kiki says thank you. Kiki waters the next little plant. Amina and Luma watch the sparkling drops. Waiting is easier when you cheer for a friend.",
+      "speaker": "Narrator",
+      "action": "kiki_water",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; kiki water"
+    },
+    {
+      "narration": "Luma takes the next turn. Slowly, slowly, the can tips forward. A little water lands beside another seedling. The friends count together again. One, two, three! Each plant gets a gentle drink, and everyone helps.",
+      "speaker": "Narrator",
+      "action": "luma_water",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; luma water"
+    },
+    {
+      "narration": "At last, Amina receives the can. Amina waters the last seedling and puts the can down carefully. The friends look at their work. Nobody had to rush or grab. There was a turn for every helper.",
+      "speaker": "Narrator",
+      "action": "amina_water",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; amina water"
+    },
+    {
+      "narration": "The garden looks lovely! These little plants will need more care as they grow. Water, sunlight and time all help. The friends promise to come back together. Sharing the work makes caring for the garden more fun.",
+      "speaker": "Narrator",
+      "action": "admire",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; admire"
+    },
+    {
+      "narration": "What could you take turns with today? A game, a book, or helping with a little job? Try listening, waiting and saying thank you. Amina, Tebo, Kiki and Luma wave goodbye. See you next time in Giggle Garden!",
+      "speaker": "Narrator",
+      "action": "goodbye",
+      "visual": "Four established child characters in the reusable Giggle Garden environment; goodbye"
+    }
+  ],
+  "editorial_review": {
+    "reviewer": "assistant",
+    "unapproved_character_names": false,
+    "character_species": "All four are children",
+    "outfits_changed": false,
+    "instant_growth_claim": false,
+    "repeated_scenes": false,
+    "word_count": 328,
+    "publication_approved": false
+  }
+}
