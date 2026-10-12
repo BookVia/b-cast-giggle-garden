@@ -18,19 +18,31 @@
       "detail": "Four actual character rigs with restricted pilot poses visually inspected; unchanged neutral skin/attachments verified. Extreme waves rejected."
     },
     "final_render": {
-      "status": "PENDING"
+      "status": "PENDING",
+      "detail": "Pilot inputs verified; ready for review rendering",
+      "utc": "2026-10-12T13:52:12.184810+00:00"
     },
     "youtube": {
-      "status": "PENDING",
-      "detail": "Finished reviewed pilot and channel authorization required"
+      "status": "BLOCKED",
+      "detail": "Finished video review and verified channel authorization required; no automatic publication",
+      "utc": "2026-10-12T13:52:12.186812+00:00"
     },
     "audio": {
       "status": "DONE",
       "detail": "133.375 seconds at 48kHz stereo; licensed local narration and original music/effects. No clipping; listening review pending."
     },
     "animation": {
-      "status": "RUNNING",
-      "detail": "Building nine animated shots with the shared can, garden and actual rigged cast."
+      "status": "DONE",
+      "detail": "Nine real animated CGI shots saved; ten representative views inspected; full video review remains pending."
+    },
+    "scene_qa": {
+      "status": "DONE",
+      "detail": "Saved-scene hash, four animated rigs, finite poses, nine shot renders and hand-off checked."
+    },
+    "plan": {
+      "status": "DONE",
+      "detail": "First pilot uses the current cast style authorized by the user; exact artwork matching deferred",
+      "utc": "2026-10-12T13:52:10.961289+00:00"
     }
   },
   "production_ready": false

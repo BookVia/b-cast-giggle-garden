@@ -95,7 +95,7 @@ box('Four little seedlings soil',(0,-4.04,.10),(5.95,.76,.16),soil)
 for y in [-4.47,-3.61]:box('Cedar seedling tray long rail',(0,y,.16),(6.10,.08,.26),wood)
 for x in [-3.04,3.04]:box('Cedar seedling tray end',(x,-4.04,.16),(.08,.9,.26),wood)
 for name in order:
- x=positions[name].x
+ x=positions[name].x+.28
  tube(name+' tender seedling stem',[(x,-4.01,.18),(x-.012,-4.01,.35),(x+.015,-4.01,.52)],.017,stemmat)
  for side in [-1,1]:
   for h,length in [(.31,.22),(.42,.18)]:

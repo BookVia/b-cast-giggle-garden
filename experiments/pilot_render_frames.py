@@ -4,9 +4,9 @@ from pathlib import Path
 R=Path(__file__).parent;E=R/'episodes/pilot-episode-01';C=E/'cgi';F=C/'frames';F.mkdir(exist_ok=True)
 sys.path.insert(0,str(R));from png_validation import valid_png
 scene=C/'Everyone_Gets_a_Turn_pilot.blend';bpy.ops.wm.open_mainfile(filepath=str(scene));sc=bpy.context.scene
-sc.render.resolution_x=1280;sc.render.resolution_y=720;sc.render.resolution_percentage=100;sc.eevee.taa_render_samples=16
+sc.render.resolution_x=1280;sc.render.resolution_y=720;sc.render.resolution_percentage=100;sc.cycles.samples=8;sc.cycles.device='CPU';sc.cycles.use_denoising=True;sc.render.use_persistent_data=True
 sc.render.image_settings.file_format='PNG';sc.render.image_settings.color_mode='RGB';sc.render.image_settings.compression=15
-manifest={'scene_sha256':hashlib.sha256(scene.read_bytes()).hexdigest(),'width':1280,'height':720,'fps':24,'engine':sc.render.engine,'samples':16,'total_frames':sc.frame_end}
+manifest={'scene_sha256':hashlib.sha256(scene.read_bytes()).hexdigest(),'width':1280,'height':720,'fps':24,'engine':sc.render.engine,'samples':8,'total_frames':sc.frame_end}
 mfile=C/'frame_source_manifest.json'
 if mfile.exists():assert json.loads(mfile.read_text())==manifest,'Source/settings changed; preserve and explicitly supersede old frame directory before rerender'
 else:mfile.write_text(json.dumps(manifest,indent=2))

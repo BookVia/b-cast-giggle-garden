@@ -1,15 +1,33 @@
 {
-  "scene_sha256": "8c70546c31127cf2e0fbeaa40fc4a5356458d7a9e666984c2e142ba9f6829ee2",
-  "asset_tag": "pilot-e01-input-8c70546c3112",
+  "scene_sha256": "bf20697d705debb5ccccaf75288008bb2fbad497a23e3ae6ce5a3c4338227cc4",
+  "asset_tag": "pilot-e01-input-bf20697d705d",
   "repository": "BookVia/b-cast-giggle-garden",
   "public_standard_runner_only": true,
   "benchmark_job_minutes": 15,
-  "max_parallel": 2,
+  "max_parallel": 8,
   "artifact_uploads": false,
   "caches": false,
-  "billing_mode": "Standard public runner plus GitHub release assets; no paid runners, Actions artifacts, packages or caches",
   "blender_version": "5.2.2",
   "blender_download": "https://download.blender.org/release/Blender5.2/blender-5.2.2-linux-x64.tar.xz",
-  "source_policy": "Current pilot style accepted; exact original artwork matching deferred; no automatic YouTube publication",
-  "technical_and_visual_qa_required": true
+  "scene_technical_qa_passed": true,
+  "scene_visual_qa_passed": true,
+  "visual_review_scope": "Nine representative shot frames, dedicated hand-off and prior four-character restricted-pose renders inspected. Full motion and finished video review remain pending.",
+  "render_configuration": {
+    "engine": "CYCLES",
+    "samples": 8,
+    "fps": 24,
+    "resolution": [
+      1280,
+      720
+    ],
+    "total_frames": 3201,
+    "shards": 16,
+    "max_parallel": 8,
+    "max_job_minutes": 180
+  },
+  "current_pilot_style_authorized": true,
+  "original_artwork_likeness_passed": false,
+  "production_ready": false,
+  "automatic_youtube_publication": false,
+  "observed_github_warm_frame_seconds": 17.119
 }

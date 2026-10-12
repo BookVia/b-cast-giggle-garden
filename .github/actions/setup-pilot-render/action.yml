@@ -1,0 +1,41 @@
+name: Free standard runner pilot render setup
+description: Fetch the hash-verified scene and official Blender on a standard public runner.
+runs:
+  using: composite
+  steps:
+    - name: Validate bounded first-pilot policy
+      shell: bash
+      run: |
+        python3 - <<'PY'
+        import json,os
+        m=json.load(open('pilot-source-manifest.json'))
+        c=m['render_configuration']
+        assert os.environ['GITHUB_REPOSITORY']=='BookVia/b-cast-giggle-garden'
+        assert m['public_standard_runner_only'] and not m['artifact_uploads'] and not m['caches']
+        assert m['scene_technical_qa_passed'] and m['scene_visual_qa_passed']
+        assert c['engine']=='CYCLES' and c['samples']==8 and c['fps']==24
+        assert c['resolution']==[1280,720] and c['total_frames']==3201 and 1<=c['shards']<=64
+        with open(os.environ['GITHUB_ENV'],'a') as f:f.write('SOURCE_TAG='+m['asset_tag']+'\n')
+        PY
+    - name: Fetch verified render input
+      shell: bash
+      run: |
+        gh release download "$SOURCE_TAG" --pattern GiggleGarden_E01_Render_Input.zip --dir render_input
+        python3 - <<'PY'
+        import zipfile,json,hashlib
+        with zipfile.ZipFile('render_input/GiggleGarden_E01_Render_Input.zip') as z:
+          assert z.testzip() is None
+          assert set(z.namelist())=={'scene.blend','source_manifest.json','pilot_mix.wav','timing.json'}
+          z.extractall('render_input')
+        m=json.load(open('pilot-source-manifest.json'))
+        assert hashlib.sha256(open('render_input/scene.blend','rb').read()).hexdigest()==m['scene_sha256']
+        PY
+    - name: Install free software dependencies
+      shell: bash
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq ffmpeg xvfb libgl1 libegl1 libxi6 libxrender1 libxfixes3 libxkbcommon0
+        curl -A 'Mozilla/5.0' --fail --location --retry 2 --max-time 180 https://download.blender.org/release/Blender5.2/blender-5.2.2-linux-x64.tar.xz -o blender.tar.xz
+        tar -xf blender.tar.xz
+        mv blender-5.2.2-linux-x64 blender_dir
+        ./blender_dir/blender --version

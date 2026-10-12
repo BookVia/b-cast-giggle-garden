@@ -39,6 +39,9 @@ def validate(ep):
 def render_final(ep):
  issues,data=validate(ep)
  if issues:raise RuntimeError('; '.join(issues))
+ if (ep/'cgi/ci_source_manifest.json').is_file():
+  from github_pilot_backend import render_final as github_render
+  return github_render(ep)
  cgi=ep/'cgi';out=ep/'final';out.mkdir(exist_ok=True)
  with (cgi/'full_render.log').open('w',encoding='utf-8') as log:
   subprocess.run([str(BLENDER),'-b','--threads','2','--python-exit-code','1','-P',str(ROOT/'pilot_render_frames.py')],stdout=log,stderr=subprocess.STDOUT,check=True,cwd=ROOT)

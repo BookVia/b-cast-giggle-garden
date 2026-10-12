@@ -14,5 +14,21 @@
     "actions_artifacts": false,
     "cache": false,
     "output": "Bounded release assets; no automatic YouTube publication"
+  },
+  "pilot_render": {
+    "frames": 3201,
+    "resolution": [
+      1280,
+      720
+    ],
+    "engine": "CYCLES CPU",
+    "shards": 16,
+    "max_parallel": 8,
+    "max_job_minutes": 180,
+    "public_standard_runner_only": true,
+    "paid_runners": false,
+    "actions_artifacts": false,
+    "cache": false,
+    "automatic_youtube_publication": false
   }
 }

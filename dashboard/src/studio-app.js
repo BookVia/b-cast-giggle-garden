@@ -1,5 +1,28 @@
 export const STUDIO_APP = String.raw`
 let ytWindow=28,ytData=null;
+
+function paintPilotProgress(s){
+ const p=s.pilotProgress||{},r=p.render||{},st=p.stages||{},ep=(s.episodes||[]).find(e=>e.id==='pilot-episode-01');
+ if(!ep)return;
+ let panel=document.querySelector('#pilot-production-panel');
+ if(!panel){panel=document.createElement('section');panel.id='pilot-production-panel';panel.className='card';panel.style.cssText='padding:24px;margin:20px 0;background:#fff;border:1px solid #dde4ed;border-radius:18px';
+ panel.innerHTML='<h2>First episode: Everyone Gets a Turn</h2><p id="pilot-production-state"></p><div id="pilot-production-metrics" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px"></div><progress id="pilot-production-bar" max="3201" value="0" style="width:100%;height:18px;margin:18px 0;accent-color:#509c79"></progress><p id="pilot-production-note" class="muted"></p><div id="pilot-video-slot"></div>';
+ document.querySelector('#workspace').prepend(panel);}
+ const done=Number(r.done||0),total=Number(r.total||3201),finished=st.final_render?.status==='DONE';
+ document.querySelector('#pilot-production-state').textContent=finished?'Video assembled • ready for full review':st.final_render?.status==='RUNNING'?'Rendering the episode':st.final_render?.status==='BLOCKED'?'Checks need attention':'Preparing the episode render';
+ const metrics=[['Cast',st.cast_alignment?.status==='DONE'?'Checked':'In progress'],['Rigs',st.rigging?.status==='DONE'?'Checked':'In progress'],['Scenes',st.scene_qa?.status==='DONE'?'Checked':'In progress'],['Verified frames',done.toLocaleString()+' / '+total.toLocaleString()],['Duration','2 min 13 sec'],['YouTube','Not published']];
+ document.querySelector('#pilot-production-metrics').innerHTML=metrics.map(([label,value])=>'<article class="metric"><span>'+esc(label)+'</span><strong>'+esc(value)+'</strong></article>').join('');
+ document.querySelector('#pilot-production-bar').max=total;document.querySelector('#pilot-production-bar').value=done;
+ const active=Array.isArray(r.active_shards)?r.active_shards.length:0;
+ const note=document.querySelector('#pilot-production-note');note.replaceChildren();
+ note.append(document.createTextNode(finished?'The complete video is available below. Full visual and listening review is pending.':r.shards_total?active+' render chunks active; '+Number(r.shards_done||0)+' of '+r.shards_total+' verified.':st.final_render?.detail||'Preparing real 3D animation for the first pilot.'));
+ if(r.github_url&&/^https:\/\/github\.com\/BookVia\/b-cast-giggle-garden\/actions\/runs\/\d+$/.test(r.github_url)){const a=document.createElement('a');a.href=r.github_url;a.target='_blank';a.rel='noopener';a.textContent=' View render progress';note.append(a);}
+ const slot=document.querySelector('#pilot-video-slot');
+ if(finished&&r.video_url&&r.video_url.startsWith('https://github.com/BookVia/b-cast-giggle-garden/releases/download/')){
+  if(slot.dataset.source!==r.video_url){slot.replaceChildren();const v=document.createElement('video');v.controls=true;v.preload='metadata';v.src=r.video_url;v.style.cssText='width:100%;max-height:720px;border-radius:12px;background:#101820';slot.append(v);const a=document.createElement('a');a.href=r.video_url;a.textContent='Download episode one';slot.append(a);slot.dataset.source=r.video_url;}
+ }
+}
+
 function paintCastViews(){
  for(const [i,n] of ['Amina','Tebo','Kiki','Luma'].entries()){
   const card=$('#cast')?.children[i];if(!card||card.querySelector('.candidate-views'))continue;
@@ -44,8 +67,8 @@ async function studioRefresh(){
  try{const state=await api('state'),s=state.snapshot||{};
  $('#github-status').textContent=JSON.stringify(s.githubExtension||{status:'Waiting for local agent sync'},null,2);$('#ci-local').disabled=!state.lastSeen||Date.now()/1000-state.lastSeen>120;
  $('#tool-reports').textContent=JSON.stringify(s.toolResearch||{status:'Waiting for the local agent to report experiments'},null,2);
- paintCastViews();
- if(window.echarts){const el=$('#production-chart'),chart=echarts.getInstanceByDom(el)||echarts.init(el,null,{renderer:'svg'});const counts={Blocked:0,Running:0,Completed:0,Draft:0};for(const e of s.episodes||[]){const text=String(e.status).toUpperCase();counts[text.includes('BLOCKED')?'Blocked':text.includes('RUNNING')?'Running':text.includes('COMPLETE')?'Completed':'Draft']++}chart.setOption({tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:90,right:35,top:25,bottom:30},xAxis:{type:'value',minInterval:1,splitLine:{lineStyle:{color:'#edf1f6'}}},yAxis:{type:'category',data:Object.keys(counts)},series:[{type:'bar',barWidth:28,data:Object.values(counts).map((value,i)=>({value,itemStyle:{color:['#e9b257','#8660af','#509c79','#99aac0'][i],borderRadius:5}})),label:{show:true,position:'right'}}],aria:{enabled:true}})}
+ paintCastViews();paintPilotProgress(s);
+ if(window.echarts){const el=$('#production-chart'),chart=echarts.getInstanceByDom(el)||echarts.init(el,null,{renderer:'svg'});const counts={Blocked:0,Running:0,Completed:0,Draft:0};for(const e of s.episodes||[]){const text=String(e.status).toUpperCase();counts[text.includes('BLOCKED')?'Blocked':(text.includes('RUNNING')||text.includes('RENDERING')||text.includes('IN PRODUCTION'))?'Running':(text.includes('COMPLETE')||text.includes('READY FOR REVIEW'))?'Completed':'Draft']++}chart.setOption({tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},grid:{left:90,right:35,top:25,bottom:30},xAxis:{type:'value',minInterval:1,splitLine:{lineStyle:{color:'#edf1f6'}}},yAxis:{type:'category',data:Object.keys(counts)},series:[{type:'bar',barWidth:28,data:Object.values(counts).map((value,i)=>({value,itemStyle:{color:['#e9b257','#8660af','#509c79','#99aac0'][i],borderRadius:5}})),label:{show:true,position:'right'}}],aria:{enabled:true}})}
  $('#generation-status').textContent=JSON.stringify(s.generationExperiment||{},null,2);
  $('#tool-queue').disabled=!state.lastSeen||Date.now()/1000-state.lastSeen>120;
  $('#job-filter').onchange=()=>filterJobs();$('#episode-search').oninput=()=>{const q=$('#episode-search').value.toLowerCase();document.querySelectorAll('#episodes .episode').forEach(el=>el.hidden=!el.textContent.toLowerCase().includes(q))};

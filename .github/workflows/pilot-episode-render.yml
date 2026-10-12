@@ -1,0 +1,83 @@
+name: Giggle Garden episode one real CGI build
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: giggle-garden-pilot-final-render
+  cancel-in-progress: false
+jobs:
+  configure:
+    if: github.repository == 'BookVia/b-cast-giggle-garden' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.config.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: config
+        run: |
+          python3 - <<'PY'
+          import json,os
+          m=json.load(open('pilot-source-manifest.json'))
+          n=m['render_configuration']['shards']
+          assert m['scene_technical_qa_passed'] and m['scene_visual_qa_passed']
+          assert m['public_standard_runner_only'] and 1<=n<=64
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('matrix='+json.dumps({'shard':list(range(n))})+'\n')
+          PY
+  render:
+    needs: configure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix: ${{ fromJSON(needs.configure.outputs.matrix) }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SHARD: ${{ matrix.shard }}
+      LIBGL_ALWAYS_SOFTWARE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/setup-pilot-render
+      - name: Render every actual animation frame and verify encoded chunk
+        run: xvfb-run -a ./blender_dir/blender -b --threads 4 --python-exit-code 1 -P pipeline/pilot_render_shard.py -- --shard "$SHARD"
+      - name: Save verified chunk without paid artifact storage
+        run: gh release upload "$SOURCE_TAG" output/pilot-chunk-* --clobber
+  assemble:
+    needs: render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Fetch all verified chunks and licensed local audio
+        run: |
+          python3 - <<'PY'
+          import json,os
+          m=json.load(open('pilot-source-manifest.json'))
+          assert m['public_standard_runner_only']
+          with open(os.environ['GITHUB_ENV'],'a') as f:f.write('SOURCE_TAG='+m['asset_tag']+'\n')
+          PY
+          gh release download "$SOURCE_TAG" --pattern 'pilot-chunk-*' --dir chunks
+          gh release download "$SOURCE_TAG" --pattern GiggleGarden_E01_Render_Input.zip --dir render_input
+          python3 - <<'PY'
+          import zipfile
+          with zipfile.ZipFile('render_input/GiggleGarden_E01_Render_Input.zip') as z:
+            assert z.testzip() is None
+            z.extract('pilot_mix.wav','render_input')
+          PY
+      - name: Assemble, check frame count, audio sync and full decode
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python3 pipeline/pilot_assemble_ci.py
+      - name: Save technically verified review video
+        run: gh release upload "$SOURCE_TAG" output/Giggle_Garden_E01_Review.mp4 output/pilot-final-video-audit.json --clobber
